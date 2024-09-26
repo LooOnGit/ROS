@@ -1,0 +1,25 @@
+[0.707s] Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_robot:/home/looubuntu/ros2_ws/install/my_pkg:/home/looubuntu/ros2_ws/install/modelo_robot:/opt/ros/humble /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/urdf_test -- -j12 -l12
+[0.737s] Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_robot:/home/looubuntu/ros2_ws/install/my_pkg:/home/looubuntu/ros2_ws/install/modelo_robot:/opt/ros/humble /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/urdf_test -- -j12 -l12
+[0.760s] Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_robot:/home/looubuntu/ros2_ws/install/my_pkg:/home/looubuntu/ros2_ws/install/modelo_robot:/opt/ros/humble /usr/bin/cmake --install /home/looubuntu/ros2_ws/build/urdf_test
+[0.766s] -- Install configuration: ""
+[0.766s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/launch
+[0.766s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/launch/display.launch.py
+[0.766s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/urdf
+[0.767s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/urdf/model.urdf
+[0.767s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/urdf/model.csv
+[0.767s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/ament_index/resource_index/package_run_dependencies/urdf_test
+[0.767s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/ament_index/resource_index/parent_prefix_path/urdf_test
+[0.767s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/environment/ament_prefix_path.sh
+[0.767s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/environment/ament_prefix_path.dsv
+[0.767s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/environment/path.sh
+[0.767s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/environment/path.dsv
+[0.767s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/local_setup.bash
+[0.768s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/local_setup.sh
+[0.768s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/local_setup.zsh
+[0.768s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/local_setup.dsv
+[0.768s] -- Installing: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/package.dsv
+[0.768s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/ament_index/resource_index/packages/urdf_test
+[0.768s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/cmake/urdf_testConfig.cmake
+[0.768s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/cmake/urdf_testConfig-version.cmake
+[0.768s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/package.xml
+[0.769s] Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_robot:/home/looubuntu/ros2_ws/install/my_pkg:/home/looubuntu/ros2_ws/install/modelo_robot:/opt/ros/humble /usr/bin/cmake --install /home/looubuntu/ros2_ws/build/urdf_test

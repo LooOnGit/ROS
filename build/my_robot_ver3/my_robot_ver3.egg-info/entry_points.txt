@@ -1,0 +1,3 @@
+[console_scripts]
+truyen = my_robot_ver3.gui:main
+

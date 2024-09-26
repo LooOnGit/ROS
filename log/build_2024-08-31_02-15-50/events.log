@@ -1,0 +1,327 @@
+[0.000000] (-) TimerEvent: {}
+[0.000260] (my_interfaces) JobQueued: {'identifier': 'my_interfaces', 'dependencies': OrderedDict()}
+[0.000342] (my_pkg) JobQueued: {'identifier': 'my_pkg', 'dependencies': OrderedDict()}
+[0.000360] (my_interfaces) JobStarted: {'identifier': 'my_interfaces'}
+[0.004267] (my_pkg) JobStarted: {'identifier': 'my_pkg'}
+[0.008879] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'cmake'}
+[0.009249] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'build'}
+[0.009723] (my_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/looubuntu/ros2_ws/build/my_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/looubuntu/ros2_ws/build/my_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'looubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/looubuntu/ros2_ws/install/my_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/looubuntu'), ('OLDPWD', '/home/looubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1593'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/looubuntu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'looubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'looubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/looubuntu-GL65-Leopard-10SCXK:@/tmp/.ICE-unix/1564,unix/looubuntu-GL65-Leopard-10SCXK:/tmp/.ICE-unix/1564'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a4dc266f_55f8_4fb1_8ef0_6901a97c477b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LFKBT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/looubuntu/ros2_ws/install/my_pkg:/home/looubuntu/ros2_ws/install/my_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/looubuntu/ros2_ws/build/my_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages:/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/looubuntu/ros2_ws/install/my_interfaces:/home/looubuntu/ros2_ws/install/my_pkg:/opt/ros/humble')]), 'shell': False}
+[0.030013] (my_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099653] (-) TimerEvent: {}
+[0.124819] (my_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.126109] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.128392] (my_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.150762] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199742] (-) TimerEvent: {}
+[0.299986] (-) TimerEvent: {}
+[0.359502] (my_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.400088] (-) TimerEvent: {}
+[0.500571] (my_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_pkg', 'build', '--build-base', '/home/looubuntu/ros2_ws/build/my_pkg/build', 'install', '--record', '/home/looubuntu/ros2_ws/build/my_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/looubuntu/ros2_ws/src/my_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'looubuntu', 'LC_TIME': 'vi_VN', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/looubuntu/ros2_ws/install/my_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/looubuntu', 'OLDPWD': '/home/looubuntu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'vi_VN', 'SYSTEMD_EXEC_PID': '1593', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/looubuntu/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'looubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'looubuntu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/looubuntu-GL65-Leopard-10SCXK:@/tmp/.ICE-unix/1564,unix/looubuntu-GL65-Leopard-10SCXK:/tmp/.ICE-unix/1564', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'vi_VN', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a4dc266f_55f8_4fb1_8ef0_6901a97c477b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'vi_VN', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LFKBT2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.112', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/looubuntu/ros2_ws/install/my_pkg:/home/looubuntu/ros2_ws/install/my_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'vi_VN', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'vi_VN', 'LC_IDENTIFICATION': 'vi_VN', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/looubuntu/ros2_ws/build/my_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/looubuntu/ros2_ws/build/my_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages:/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages:/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'vi_VN', 'LC_PAPER': 'vi_VN', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/looubuntu/ros2_ws/install/my_interfaces'}, 'shell': False}
+[0.501770] (-) TimerEvent: {}
+[0.507652] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.601859] (-) TimerEvent: {}
+[0.682663] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.696857] (my_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.697498] (my_pkg) StdoutLine: {'line': b'writing ../../build/my_pkg/my_pkg.egg-info/PKG-INFO\n'}
+[0.697617] (my_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/my_pkg/my_pkg.egg-info/dependency_links.txt\n'}
+[0.697805] (my_pkg) StdoutLine: {'line': b'writing entry points to ../../build/my_pkg/my_pkg.egg-info/entry_points.txt\n'}
+[0.697922] (my_pkg) StdoutLine: {'line': b'writing requirements to ../../build/my_pkg/my_pkg.egg-info/requires.txt\n'}
+[0.698010] (my_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/my_pkg/my_pkg.egg-info/top_level.txt\n'}
+[0.699375] (my_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.700039] (my_pkg) StdoutLine: {'line': b"reading manifest file '../../build/my_pkg/my_pkg.egg-info/SOURCES.txt'\n"}
+[0.700329] (my_pkg) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.701165] (my_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_pkg/my_pkg.egg-info/SOURCES.txt'\n"}
+[0.701334] (my_pkg) StdoutLine: {'line': b'running build\n'}
+[0.701387] (my_pkg) StdoutLine: {'line': b'running build_py\n'}
+[0.701601] (my_pkg) StdoutLine: {'line': b'copying my_pkg/service.py -> /home/looubuntu/ros2_ws/build/my_pkg/build/lib/my_pkg\n'}
+[0.701913] (-) TimerEvent: {}
+[0.702393] (my_pkg) StdoutLine: {'line': b'running install\n'}
+[0.702818] (my_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.703605] (my_pkg) StdoutLine: {'line': b'copying /home/looubuntu/ros2_ws/build/my_pkg/build/lib/my_pkg/service.py -> /home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages/my_pkg\n'}
+[0.704644] (my_pkg) StdoutLine: {'line': b'byte-compiling /home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages/my_pkg/service.py to service.cpython-310.pyc\n'}
+[0.705241] (my_pkg) StdoutLine: {'line': b'running install_data\n'}
+[0.705376] (my_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.706958] (my_pkg) StdoutLine: {'line': b"removing '/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages/my_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.707184] (my_pkg) StdoutLine: {'line': b'Copying ../../build/my_pkg/my_pkg.egg-info to /home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages/my_pkg-0.0.0-py3.10.egg-info\n'}
+[0.708099] (my_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[0.716704] (my_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.716830] (my_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.716884] (my_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.724530] (my_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.726260] (my_pkg) StdoutLine: {'line': b'Installing service script to /home/looubuntu/ros2_ws/install/my_pkg/lib/my_pkg\n'}
+[0.726863] (my_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/looubuntu/ros2_ws/build/my_pkg/install.log'\n"}
+[0.733705] (my_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.734562] (my_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.735907] (my_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.756035] (my_pkg) CommandEnded: {'returncode': 0}
+[0.758862] (my_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[0.761454] (my_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/looubuntu/ros2_ws/build/my_interfaces\n'}
+[0.763866] (my_pkg) JobEnded: {'identifier': 'my_pkg', 'rc': 0}
+[0.777881] (my_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.785171] (my_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.793320] (my_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_my_interfaces\n'}
+[0.802033] (-) TimerEvent: {}
+[0.902264] (-) TimerEvent: {}
+[1.002524] (-) TimerEvent: {}
+[1.005028] (my_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.005607] (my_interfaces) StdoutLine: {'line': b'writing my_interfaces.egg-info/PKG-INFO\n'}
+[1.005800] (my_interfaces) StdoutLine: {'line': b'writing dependency_links to my_interfaces.egg-info/dependency_links.txt\n'}
+[1.005998] (my_interfaces) StdoutLine: {'line': b'writing top-level names to my_interfaces.egg-info/top_level.txt\n'}
+[1.007794] (my_interfaces) StdoutLine: {'line': b"reading manifest file 'my_interfaces.egg-info/SOURCES.txt'\n"}
+[1.008419] (my_interfaces) StdoutLine: {'line': b"writing manifest file 'my_interfaces.egg-info/SOURCES.txt'\n"}
+[1.029328] (my_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_my_interfaces_egg\n'}
+[1.046950] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_generator_c\x1b[0m\n'}
+[1.053585] (my_interfaces) StdoutLine: {'line': b'[  5%] Built target my_interfaces__cpp\n'}
+[1.054373] (my_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/my_msg__functions.c.o\x1b[0m\n'}
+[1.054659] (my_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/srv/detail/vd__functions.c.o\x1b[0m\n'}
+[1.061031] (my_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.061229] (my_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.061325] (my_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.095227] (my_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.102605] (-) TimerEvent: {}
+[1.121798] (my_interfaces) StdoutLine: {'line': b'[ 20%] Built target my_interfaces__rosidl_generator_c\n'}
+[1.131561] (my_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.131845] (my_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.132030] (my_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.202701] (-) TimerEvent: {}
+[1.302989] (-) TimerEvent: {}
+[1.350637] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.353414] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.363471] (my_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/my_msg__type_support.cpp.o\x1b[0m\n'}
+[1.363964] (my_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/my_msg__type_support.cpp.o\x1b[0m\n'}
+[1.365046] (my_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/srv/detail/vd__type_support.cpp.o\x1b[0m\n'}
+[1.367925] (my_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/srv/detail/dds_fastrtps/vd__type_support.cpp.o\x1b[0m\n'}
+[1.382893] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[1.383195] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.395291] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.395572] (my_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/msg/my_msg__type_support.cpp.o\x1b[0m\n'}
+[1.395710] (my_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/srv/vd__type_support.cpp.o\x1b[0m\n'}
+[1.397973] (my_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/msg/my_msg__type_support.cpp.o\x1b[0m\n'}
+[1.398161] (my_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/srv/vd__type_support.cpp.o\x1b[0m\n'}
+[1.403098] (-) TimerEvent: {}
+[1.408200] (my_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/my_msg__type_support.c.o\x1b[0m\n'}
+[1.409317] (my_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/srv/detail/vd__type_support.c.o\x1b[0m\n'}
+[1.439809] (my_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.458789] (my_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.493247] (my_interfaces) StdoutLine: {'line': b'[ 58%] Built target my_interfaces__rosidl_typesupport_c\n'}
+[1.493493] (my_interfaces) StdoutLine: {'line': b'[ 58%] Built target my_interfaces__rosidl_typesupport_introspection_c\n'}
+[1.503204] (-) TimerEvent: {}
+[1.515495] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.526625] (my_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/my_msg__type_support_c.cpp.o\x1b[0m\n'}
+[1.529695] (my_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/srv/detail/vd__type_support_c.cpp.o\x1b[0m\n'}
+[1.603325] (-) TimerEvent: {}
+[1.703651] (-) TimerEvent: {}
+[1.743301] (my_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.743526] (my_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.774807] (my_interfaces) StdoutLine: {'line': b'[ 69%] Built target my_interfaces__rosidl_typesupport_cpp\n'}
+[1.775020] (my_interfaces) StdoutLine: {'line': b'[ 69%] Built target my_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.803796] (-) TimerEvent: {}
+[1.871111] (my_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.903907] (-) TimerEvent: {}
+[1.927135] (my_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[1.930028] (my_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.980813] (my_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.994270] (my_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_interfaces\n'}
+[2.003981] (-) TimerEvent: {}
+[2.007754] (my_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.104069] (-) TimerEvent: {}
+[2.204309] (-) TimerEvent: {}
+[2.304555] (-) TimerEvent: {}
+[2.372859] (my_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_interfaces__py\n'}
+[2.380129] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_generator_py\x1b[0m\n'}
+[2.389492] (my_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/msg/_my_msg_s.c.o\x1b[0m\n'}
+[2.389645] (my_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/srv/_vd_s.c.o\x1b[0m\n'}
+[2.404649] (-) TimerEvent: {}
+[2.473673] (my_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_interfaces/libmy_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[2.503132] (my_interfaces) StdoutLine: {'line': b'[ 84%] Built target my_interfaces__rosidl_generator_py\n'}
+[2.504714] (-) TimerEvent: {}
+[2.510418] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.510599] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.510700] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.519738] (my_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.519935] (my_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.520036] (my_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.597504] (my_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.597837] (my_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.602565] (my_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.604749] (-) TimerEvent: {}
+[2.622479] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces__rosidl_typesupport_c__pyext\n'}
+[2.622689] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[2.628925] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.637928] (my_interfaces) CommandEnded: {'returncode': 0}
+[2.687520] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'install'}
+[2.694214] (my_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/looubuntu/ros2_ws/build/my_interfaces'], 'cwd': '/home/looubuntu/ros2_ws/build/my_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'looubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/looubuntu/ros2_ws/install/my_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/looubuntu'), ('OLDPWD', '/home/looubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1593'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/looubuntu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'looubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'looubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/looubuntu-GL65-Leopard-10SCXK:@/tmp/.ICE-unix/1564,unix/looubuntu-GL65-Leopard-10SCXK:/tmp/.ICE-unix/1564'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a4dc266f_55f8_4fb1_8ef0_6901a97c477b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LFKBT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/looubuntu/ros2_ws/install/my_pkg:/home/looubuntu/ros2_ws/install/my_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/looubuntu/ros2_ws/build/my_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages:/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/looubuntu/ros2_ws/install/my_interfaces:/home/looubuntu/ros2_ws/install/my_pkg:/opt/ros/humble')]), 'shell': False}
+[2.700726] (my_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.700839] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_interfaces\n'}
+[2.700941] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[2.700998] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[2.701082] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.701139] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/my_msg.h\n'}
+[2.701195] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[2.701254] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__functions.h\n'}
+[2.701342] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__type_support.h\n'}
+[2.701450] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__functions.c\n'}
+[2.701510] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__struct.h\n'}
+[2.701567] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[2.701624] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/vd.h\n'}
+[2.701699] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[2.701787] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__struct.h\n'}
+[2.701857] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__functions.c\n'}
+[2.701927] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__type_support.h\n'}
+[2.701986] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__functions.h\n'}
+[2.702043] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/environment/library_path.sh\n'}
+[2.702117] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/environment/library_path.dsv\n'}
+[2.702193] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so\n'}
+[2.702379] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so" to ""\n'}
+[2.702450] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[2.702531] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[2.702588] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[2.702644] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[2.702730] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.702793] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[2.702846] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[2.702902] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__rosidl_typesupport_fastrtps_c.h\n'}
+[2.702982] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.703107] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.703179] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[2.703267] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[2.703324] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[2.703380] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__type_support.c\n'}
+[2.703464] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__rosidl_typesupport_introspection_c.h\n'}
+[2.703525] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.703581] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[2.703638] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[2.703716] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__type_support.c\n'}
+[2.703796] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__rosidl_typesupport_introspection_c.h\n'}
+[2.703851] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.703995] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.704099] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so\n'}
+[2.704312] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[2.704400] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[2.704460] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[2.704524] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[2.704619] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__struct.hpp\n'}
+[2.704676] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__traits.hpp\n'}
+[2.704761] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__builder.hpp\n'}
+[2.704839] (-) TimerEvent: {}
+[2.704949] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/my_msg.hpp\n'}
+[2.705014] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[2.705073] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[2.705130] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__traits.hpp\n'}
+[2.705188] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__struct.hpp\n'}
+[2.705267] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__builder.hpp\n'}
+[2.705378] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/vd.hpp\n'}
+[2.705437] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[2.705494] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[2.705549] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.705605] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[2.705661] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.705770] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/dds_fastrtps\n'}
+[2.705827] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[2.705880] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[2.705932] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.705988] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/dds_fastrtps\n'}
+[2.706043] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.706121] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[2.706226] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[2.706284] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[2.706385] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[2.706454] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__type_support.cpp\n'}
+[2.706508] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.706561] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[2.706617] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[2.706674] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__type_support.cpp\n'}
+[2.706735] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/vd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.706819] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.706900] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[2.706972] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.707196] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[2.707278] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/environment/pythonpath.sh\n'}
+[2.707360] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/environment/pythonpath.dsv\n'}
+[2.707441] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info\n'}
+[2.707523] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.707605] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.707687] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.707775] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.707859] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces\n'}
+[2.707939] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/msg\n'}
+[2.708021] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/msg/__init__.py\n'}
+[2.708107] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/msg/_my_msg_s.c\n'}
+[2.708169] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/msg/_my_msg.py\n'}
+[2.708249] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.708330] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/__init__.py\n'}
+[2.708410] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[2.708488] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/libmy_interfaces__rosidl_generator_py.so\n'}
+[2.708584] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv\n'}
+[2.708663] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/_vd_s.c\n'}
+[2.708746] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/__init__.py\n'}
+[2.708830] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/_vd.py\n'}
+[2.708908] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.709013] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.709123] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.709232] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.739996] (my_interfaces) StdoutLine: {'line': b"Listing '/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces'...\n"}
+[2.740138] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/__init__.py'...\n"}
+[2.740217] (my_interfaces) StdoutLine: {'line': b"Listing '/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/msg'...\n"}
+[2.740275] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/msg/__init__.py'...\n"}
+[2.740328] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/msg/_my_msg.py'...\n"}
+[2.740381] (my_interfaces) StdoutLine: {'line': b"Listing '/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv'...\n"}
+[2.740434] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/__init__.py'...\n"}
+[2.740487] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/_vd.py'...\n"}
+[2.743941] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.744193] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.744308] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.744564] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.744679] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.744946] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.745121] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so\n'}
+[2.745299] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/looubuntu/ros2_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so" to ""\n'}
+[2.745391] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/msg/MyMsg.idl\n'}
+[2.745493] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/srv/Vd.idl\n'}
+[2.745555] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/msg/MyMsg.msg\n'}
+[2.745613] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/srv/Vd.srv\n'}
+[2.745693] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/srv/Vd_Request.msg\n'}
+[2.745791] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/srv/Vd_Response.msg\n'}
+[2.745849] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/ament_index/resource_index/package_run_dependencies/my_interfaces\n'}
+[2.745945] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/ament_index/resource_index/parent_prefix_path/my_interfaces\n'}
+[2.746004] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.sh\n'}
+[2.746061] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.dsv\n'}
+[2.746116] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/environment/path.sh\n'}
+[2.746192] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/environment/path.dsv\n'}
+[2.746291] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/local_setup.bash\n'}
+[2.746353] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/local_setup.sh\n'}
+[2.746437] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/local_setup.zsh\n'}
+[2.746500] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/local_setup.dsv\n'}
+[2.746557] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/package.dsv\n'}
+[2.746613] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/ament_index/resource_index/packages/my_interfaces\n'}
+[2.746694] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport.cmake\n'}
+[2.746802] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.746859] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.746915] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.746972] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.747027] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.747110] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[2.747169] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.747263] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cppExport.cmake\n'}
+[2.747322] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.747379] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.747450] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.747535] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.747593] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[2.747647] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.747755] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport.cmake\n'}
+[2.747854] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.747906] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.747963] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.748013] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.748064] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.748113] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.748164] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.748214] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.748268] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig.cmake\n'}
+[2.748320] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig-version.cmake\n'}
+[2.748369] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/looubuntu/ros2_ws/install/my_interfaces/share/my_interfaces/package.xml\n'}
+[2.749311] (my_interfaces) CommandEnded: {'returncode': 0}
+[2.804927] (-) TimerEvent: {}
+[2.814699] (my_interfaces) JobEnded: {'identifier': 'my_interfaces', 'rc': 0}
+[2.815177] (-) EventReactorShutdown: {}

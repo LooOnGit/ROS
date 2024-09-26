@@ -1,0 +1,26 @@
+[0.012s] Invoking command in '/home/looubuntu/ros2_ws/build/my_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_pkg:/opt/ros/humble /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/my_interfaces -- -j12 -l12
+[0.031s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.124s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.125s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.128s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.150s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.347s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.486s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.661s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.679s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.697s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.697s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.697s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.705s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.736s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.736s]   rosidl_generate_interfaces() the passed file 'my_interfaces/srv/Vd.srv'
+[0.736s]   doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.736s]   '/home/looubuntu/ros2_ws/src/my_interfaces'
+[0.736s] Call Stack (most recent call first):
+[0.736s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[0.736s] 
+[0.736s] [0m
+[0.736s] -- Configuring incomplete, errors occurred!
+[0.736s] See also "/home/looubuntu/ros2_ws/build/my_interfaces/CMakeFiles/CMakeOutput.log".
+[0.739s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
+[0.741s] Invoked command in '/home/looubuntu/ros2_ws/build/my_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_pkg:/opt/ros/humble /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/my_interfaces -- -j12 -l12

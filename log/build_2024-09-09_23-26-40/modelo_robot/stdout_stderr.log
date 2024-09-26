@@ -1,0 +1,37 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+writing ../../build/modelo_robot/modelo_robot.egg-info/PKG-INFO
+writing dependency_links to ../../build/modelo_robot/modelo_robot.egg-info/dependency_links.txt
+writing entry points to ../../build/modelo_robot/modelo_robot.egg-info/entry_points.txt
+writing requirements to ../../build/modelo_robot/modelo_robot.egg-info/requires.txt
+writing top-level names to ../../build/modelo_robot/modelo_robot.egg-info/top_level.txt
+reading manifest file '../../build/modelo_robot/modelo_robot.egg-info/SOURCES.txt'
+writing manifest file '../../build/modelo_robot/modelo_robot.egg-info/SOURCES.txt'
+running build
+running build_py
+copying modelo_robot/__init__.py -> /home/looubuntu/ros2_ws/build/modelo_robot/build/lib/modelo_robot
+running install
+running install_lib
+copying /home/looubuntu/ros2_ws/build/modelo_robot/build/lib/modelo_robot/__init__.py -> /home/looubuntu/ros2_ws/install/modelo_robot/lib/python3.10/site-packages/modelo_robot
+byte-compiling /home/looubuntu/ros2_ws/install/modelo_robot/lib/python3.10/site-packages/modelo_robot/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/modelo_robot -> /home/looubuntu/ros2_ws/install/modelo_robot/share/ament_index/resource_index/packages
+copying package.xml -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot
+copying urdf/Seguidor_linea_robot.urdf -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/urdf
+copying launch/display.launch.py -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/launch
+copying launch/gazebo.launch.py -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/launch
+copying meshes/Rueda_derecha_link.STL -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/meshes
+copying meshes/Rueda_izquierda_link.STL -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/meshes
+copying meshes/Rueda_castor_link.STL -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/meshes
+copying meshes/base_link.STL -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/meshes
+copying meshes/Base_castor_link.STL -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/meshes
+copying worlds/museum.world -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/worlds
+copying worlds/world.world -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/worlds
+creating /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/config
+copying config/ekf.yaml -> /home/looubuntu/ros2_ws/install/modelo_robot/share/modelo_robot/config
+running install_egg_info
+removing '/home/looubuntu/ros2_ws/install/modelo_robot/lib/python3.10/site-packages/modelo_robot-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/modelo_robot/modelo_robot.egg-info to /home/looubuntu/ros2_ws/install/modelo_robot/lib/python3.10/site-packages/modelo_robot-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/looubuntu/ros2_ws/build/modelo_robot/install.log'

@@ -1,0 +1,49 @@
+[0.215s] Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': /usr/bin/cmake /home/looubuntu/ros2_ws/src/urdf_test -DCMAKE_INSTALL_PREFIX=/home/looubuntu/ros2_ws/install/urdf_test
+[0.222s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.222s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.222s]   contain a literal, direct call to the project() command.  Add a line of
+[0.222s]   code such as
+[0.222s] 
+[0.222s]     project(ProjectName)
+[0.222s] 
+[0.223s]   near the top of the file, but after cmake_minimum_required().
+[0.223s] 
+[0.223s]   CMake is pretending there is a "project(Project)" command on the first
+[0.223s]   line.
+[0.223s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.223s] [0m
+[0.337s] -- The C compiler identification is GNU 11.4.0
+[0.431s] -- The CXX compiler identification is GNU 11.4.0
+[0.441s] -- Detecting C compiler ABI info
+[0.496s] -- Detecting C compiler ABI info - done
+[0.505s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.505s] -- Detecting C compile features
+[0.506s] -- Detecting C compile features - done
+[0.510s] -- Detecting CXX compiler ABI info
+[0.572s] -- Detecting CXX compiler ABI info - done
+[0.580s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.580s] -- Detecting CXX compile features
+[0.580s] -- Detecting CXX compile features - done
+[0.581s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.581s]   No cmake_minimum_required command is present.  A line of code such as
+[0.581s] 
+[0.581s]     cmake_minimum_required(VERSION 3.22)
+[0.581s] 
+[0.581s]   should be added at the top of the file.  The version specified may be lower
+[0.581s]   if you wish to support older CMake versions for this project.  For more
+[0.581s]   information run "cmake --help-policy CMP0000".
+[0.581s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.581s] [0m
+[0.581s] -- Configuring done
+[0.581s] -- Generating done
+[0.582s] -- Build files have been written to: /home/looubuntu/ros2_ws/build/urdf_test
+[0.585s] Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': /usr/bin/cmake /home/looubuntu/ros2_ws/src/urdf_test -DCMAKE_INSTALL_PREFIX=/home/looubuntu/ros2_ws/install/urdf_test
+[0.586s] Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/urdf_test -- -j12 -l12
+[0.613s] Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/urdf_test -- -j12 -l12
+[0.627s] Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': /usr/bin/cmake --install /home/looubuntu/ros2_ws/build/urdf_test
+[0.632s] -- Install configuration: ""
+[0.633s] -- Installing: /home/looubuntu/ros2_ws/install/urdf_test/share/Project/launch
+[0.633s] -- Installing: /home/looubuntu/ros2_ws/install/urdf_test/share/Project/launch/display.launch.py
+[0.633s] -- Installing: /home/looubuntu/ros2_ws/install/urdf_test/share/Project/urdf
+[0.633s] -- Installing: /home/looubuntu/ros2_ws/install/urdf_test/share/Project/urdf/model.urdf
+[0.635s] Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': /usr/bin/cmake --install /home/looubuntu/ros2_ws/build/urdf_test

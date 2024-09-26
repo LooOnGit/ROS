@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="car.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-2.0457E-10 1.0027E-06 -0.010626"
+        rpy="0 0 0" />
+      <mass
+        value="0.1739" />
+      <inertia
+        ixx="0.00038756"
+        ixy="4.0592E-11"
+        ixz="5.8826E-14"
+        iyy="0.00038756"
+        iyz="-2.0038E-12"
+        izz="0.00076113" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="one_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0065 -2.5059E-05 3.2713E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.041916" />
+      <inertia
+        ixx="1.0241E-05"
+        ixy="4.0511E-10"
+        ixz="1.2253E-10"
+        iyy="5.3458E-06"
+        iyz="1.5733E-11"
+        izz="5.3457E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car.SLDASM/meshes/one_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car.SLDASM/meshes/one_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="onewheel"
+    type="continuous">
+    <origin
+      xyz="0.13836 2.0681E-05 -0.0275"
+      rpy="0 0 0.00025599" />
+    <parent
+      link="base_link" />
+    <child
+      link="one_wheel" />
+    <axis
+      xyz="-0.50022 -0.8659 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="two_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0065 -3.1891E-05 2.5819E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.041916" />
+      <inertia
+        ixx="1.0241E-05"
+        ixy="3.5179E-10"
+        ixz="2.1262E-10"
+        iyy="5.3458E-06"
+        iyz="2.7348E-11"
+        izz="5.3458E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car.SLDASM/meshes/two_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car.SLDASM/meshes/two_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="twowheel"
+    type="continuous">
+    <origin
+      xyz="-0.069178 0.11982 -0.0275"
+      rpy="0 0 2.0944" />
+    <parent
+      link="base_link" />
+    <child
+      link="two_wheel" />
+    <axis
+      xyz="-0.49978 -0.86615 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="three_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0065 1.0242E-06 -4.1078E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.041916" />
+      <inertia
+        ixx="1.0241E-05"
+        ixy="-3.8354E-10"
+        ixz="1.3557E-10"
+        iyy="5.3458E-06"
+        iyz="-1.3202E-11"
+        izz="5.3457E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car.SLDASM/meshes/three_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car.SLDASM/meshes/three_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="threewheel"
+    type="continuous">
+    <origin
+      xyz="-0.069178 -0.11982 -0.0275"
+      rpy="0 0 -2.0944" />
+    <parent
+      link="base_link" />
+    <child
+      link="three_wheel" />
+    <axis
+      xyz="-0.5 -0.86603 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+</robot>

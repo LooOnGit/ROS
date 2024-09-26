@@ -1,0 +1,22 @@
+[2.546s] Invoking command in '/home/looubuntu/ros2_ws/src/modelo_robot': PYTHONPATH=/home/looubuntu/ros2_ws/build/modelo_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/modelo_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/modelo_robot build --build-base /home/looubuntu/ros2_ws/build/modelo_robot/build install --record /home/looubuntu/ros2_ws/build/modelo_robot/install.log --install-scripts $base/lib/modelo_robot --single-version-externally-managed install_data
+[2.924s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.924s]   warnings.warn(
+[2.942s] running egg_info
+[2.942s] writing ../../build/modelo_robot/modelo_robot.egg-info/PKG-INFO
+[2.943s] writing dependency_links to ../../build/modelo_robot/modelo_robot.egg-info/dependency_links.txt
+[2.944s] writing entry points to ../../build/modelo_robot/modelo_robot.egg-info/entry_points.txt
+[2.944s] writing requirements to ../../build/modelo_robot/modelo_robot.egg-info/requires.txt
+[2.944s] writing top-level names to ../../build/modelo_robot/modelo_robot.egg-info/top_level.txt
+[2.952s] reading manifest file '../../build/modelo_robot/modelo_robot.egg-info/SOURCES.txt'
+[2.953s] writing manifest file '../../build/modelo_robot/modelo_robot.egg-info/SOURCES.txt'
+[2.953s] running build
+[2.953s] running build_py
+[2.954s] running install
+[2.955s] running install_lib
+[2.956s] running install_data
+[2.958s] running install_egg_info
+[2.962s] removing '/home/looubuntu/ros2_ws/install/modelo_robot/lib/python3.10/site-packages/modelo_robot-0.0.0-py3.10.egg-info' (and everything under it)
+[2.962s] Copying ../../build/modelo_robot/modelo_robot.egg-info to /home/looubuntu/ros2_ws/install/modelo_robot/lib/python3.10/site-packages/modelo_robot-0.0.0-py3.10.egg-info
+[2.966s] running install_scripts
+[3.003s] writing list of installed files to '/home/looubuntu/ros2_ws/build/modelo_robot/install.log'
+[3.121s] Invoked command in '/home/looubuntu/ros2_ws/src/modelo_robot' returned '0': PYTHONPATH=/home/looubuntu/ros2_ws/build/modelo_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/modelo_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/modelo_robot build --build-base /home/looubuntu/ros2_ws/build/modelo_robot/build install --record /home/looubuntu/ros2_ws/build/modelo_robot/install.log --install-scripts $base/lib/modelo_robot --single-version-externally-managed install_data

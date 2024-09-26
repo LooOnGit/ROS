@@ -1,0 +1,46 @@
+[1.233s] Invoking command in '/home/looubuntu/ros2_ws/src/my_robot_ver3': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_robot_ver3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_ver3 build --build-base /home/looubuntu/ros2_ws/build/my_robot_ver3/build install --record /home/looubuntu/ros2_ws/build/my_robot_ver3/install.log --single-version-externally-managed install_data
+[1.459s] running egg_info
+[1.459s] creating ../../build/my_robot_ver3/my_robot_ver3.egg-info
+[1.459s] writing ../../build/my_robot_ver3/my_robot_ver3.egg-info/PKG-INFO
+[1.460s] writing dependency_links to ../../build/my_robot_ver3/my_robot_ver3.egg-info/dependency_links.txt
+[1.460s] writing entry points to ../../build/my_robot_ver3/my_robot_ver3.egg-info/entry_points.txt
+[1.460s] writing requirements to ../../build/my_robot_ver3/my_robot_ver3.egg-info/requires.txt
+[1.460s] writing top-level names to ../../build/my_robot_ver3/my_robot_ver3.egg-info/top_level.txt
+[1.460s] writing manifest file '../../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[1.462s] reading manifest file '../../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[1.462s] adding license file 'LICENSE'
+[1.462s] writing manifest file '../../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[1.463s] running build
+[1.463s] running build_py
+[1.463s] creating /home/looubuntu/ros2_ws/build/my_robot_ver3/build
+[1.463s] creating /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib
+[1.463s] creating /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.463s] copying my_robot_ver3/__init__.py -> /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.463s] running install
+[1.463s] running install_lib
+[1.464s] creating /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.464s] copying /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib/my_robot_ver3/__init__.py -> /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.465s] byte-compiling /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/__init__.py to __init__.cpython-310.pyc
+[1.465s] running install_data
+[1.465s] creating /home/looubuntu/ros2_ws/install/my_robot_ver3/share/ament_index
+[1.465s] creating /home/looubuntu/ros2_ws/install/my_robot_ver3/share/ament_index/resource_index
+[1.465s] creating /home/looubuntu/ros2_ws/install/my_robot_ver3/share/ament_index/resource_index/packages
+[1.465s] copying resource/my_robot_ver3 -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/ament_index/resource_index/packages
+[1.465s] copying package.xml -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3
+[1.466s] creating /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/urdf
+[1.466s] copying urdf/Car3banh.SLDASM.csv -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/urdf
+[1.466s] copying urdf/Car3banh.SLDASM.urdf -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/urdf
+[1.466s] creating /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/launch
+[1.466s] copying launch/display.launch.py -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/launch
+[1.466s] copying launch/gazebo.launch.py -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/launch
+[1.466s] creating /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.466s] copying meshes/leftwheel.STL -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.466s] copying meshes/base_link.STL -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.466s] copying meshes/conquay.STL -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.466s] copying meshes/rightwheel.STL -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.467s] copying meshes/wheelmini.STL -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.467s] running install_egg_info
+[1.468s] Copying ../../build/my_robot_ver3/my_robot_ver3.egg-info to /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3-0.0.0-py3.10.egg-info
+[1.469s] running install_scripts
+[1.491s] writing list of installed files to '/home/looubuntu/ros2_ws/build/my_robot_ver3/install.log'
+[1.524s] Invoked command in '/home/looubuntu/ros2_ws/src/my_robot_ver3' returned '0': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_robot_ver3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_ver3 build --build-base /home/looubuntu/ros2_ws/build/my_robot_ver3/build install --record /home/looubuntu/ros2_ws/build/my_robot_ver3/install.log --single-version-externally-managed install_data

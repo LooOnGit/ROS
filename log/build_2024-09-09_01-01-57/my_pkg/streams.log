@@ -1,0 +1,17 @@
+[0.978s] Invoking command in '/home/looubuntu/ros2_ws/src/my_pkg': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_pkg build --build-base /home/looubuntu/ros2_ws/build/my_pkg/build install --record /home/looubuntu/ros2_ws/build/my_pkg/install.log --single-version-externally-managed install_data
+[1.177s] running egg_info
+[1.177s] writing ../../build/my_pkg/my_pkg.egg-info/PKG-INFO
+[1.177s] writing dependency_links to ../../build/my_pkg/my_pkg.egg-info/dependency_links.txt
+[1.177s] writing entry points to ../../build/my_pkg/my_pkg.egg-info/entry_points.txt
+[1.178s] writing requirements to ../../build/my_pkg/my_pkg.egg-info/requires.txt
+[1.178s] writing top-level names to ../../build/my_pkg/my_pkg.egg-info/top_level.txt
+[1.179s] reading manifest file '../../build/my_pkg/my_pkg.egg-info/SOURCES.txt'
+[1.179s] adding license file 'LICENSE'
+[1.180s] writing manifest file '../../build/my_pkg/my_pkg.egg-info/SOURCES.txt'
+[1.180s] running build
+[1.180s] running build_py
+[1.180s] running install
+[1.180s] running install_lib
+[1.182s] running install_data
+[1.182s] error: can't copy 'launch/gazebo.py': doesn't exist or not a regular file
+[1.198s] Invoked command in '/home/looubuntu/ros2_ws/src/my_pkg' returned '1': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_pkg build --build-base /home/looubuntu/ros2_ws/build/my_pkg/build install --record /home/looubuntu/ros2_ws/build/my_pkg/install.log --single-version-externally-managed install_data

@@ -1,0 +1,41 @@
+[0.482s] Invoking command in '/home/looubuntu/ros2_ws/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_robot:/home/looubuntu/ros2_ws/install/my_pkg:/home/looubuntu/ros2_ws/install/modelo_robot:/opt/ros/humble /usr/bin/cmake /home/looubuntu/ros2_ws/src/my_robot -DCMAKE_INSTALL_PREFIX=/home/looubuntu/ros2_ws/install/my_robot
+[0.491s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.492s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.492s]   CMake.
+[0.492s] 
+[0.492s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.492s]   CMake that the project does not need compatibility with older versions.
+[0.492s] 
+[0.492s] [0m
+[0.610s] -- The C compiler identification is GNU 11.4.0
+[0.721s] -- The CXX compiler identification is GNU 11.4.0
+[0.731s] -- Detecting C compiler ABI info
+[0.790s] -- Detecting C compiler ABI info - done
+[0.798s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.798s] -- Detecting C compile features
+[0.799s] -- Detecting C compile features - done
+[0.803s] -- Detecting CXX compiler ABI info
+[0.869s] -- Detecting CXX compiler ABI info - done
+[0.877s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.877s] -- Detecting CXX compile features
+[0.877s] -- Detecting CXX compile features - done
+[0.886s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.886s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.886s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.887s]   CMake did not find one.
+[0.887s] 
+[0.887s]   Could not find a package configuration file provided by "catkin" with any
+[0.887s]   of the following names:
+[0.887s] 
+[0.887s]     catkinConfig.cmake
+[0.887s]     catkin-config.cmake
+[0.887s] 
+[0.887s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.887s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.887s]   provides a separate development package or SDK, be sure it has been
+[0.888s]   installed.
+[0.888s] 
+[0.888s] [0m
+[0.888s] -- Configuring incomplete, errors occurred!
+[0.888s] See also "/home/looubuntu/ros2_ws/build/my_robot/CMakeFiles/CMakeOutput.log".
+[0.889s] Invoked command in '/home/looubuntu/ros2_ws/build/my_robot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_robot:/home/looubuntu/ros2_ws/install/my_pkg:/home/looubuntu/ros2_ws/install/modelo_robot:/opt/ros/humble /usr/bin/cmake /home/looubuntu/ros2_ws/src/my_robot -DCMAKE_INSTALL_PREFIX=/home/looubuntu/ros2_ws/install/my_robot

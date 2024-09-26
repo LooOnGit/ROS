@@ -1,0 +1,2 @@
+Invoking command in '/home/looubuntu/ros2_ws/build/my_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/looubuntu/ros2_ws/src/my_interfaces -DCMAKE_INSTALL_PREFIX=/home/looubuntu/ros2_ws/install/my_interfaces
+Invoked command in '/home/looubuntu/ros2_ws/build/my_interfaces' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/looubuntu/ros2_ws/src/my_interfaces -DCMAKE_INSTALL_PREFIX=/home/looubuntu/ros2_ws/install/my_interfaces

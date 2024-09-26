@@ -1,0 +1,25 @@
+[0.360s] Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/urdf_test -- -j12 -l12
+[0.384s] Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/urdf_test -- -j12 -l12
+[0.403s] Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': /usr/bin/cmake --install /home/looubuntu/ros2_ws/build/urdf_test
+[0.408s] -- Install configuration: ""
+[0.408s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/launch
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/launch/display.launch.py
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/urdf
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/urdf/model.urdf
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/urdf/model.csv
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/ament_index/resource_index/package_run_dependencies/urdf_test
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/ament_index/resource_index/parent_prefix_path/urdf_test
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/environment/ament_prefix_path.sh
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/environment/ament_prefix_path.dsv
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/environment/path.sh
+[0.409s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/environment/path.dsv
+[0.410s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/local_setup.bash
+[0.410s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/local_setup.sh
+[0.410s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/local_setup.zsh
+[0.410s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/local_setup.dsv
+[0.410s] -- Installing: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/package.dsv
+[0.410s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/ament_index/resource_index/packages/urdf_test
+[0.410s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/cmake/urdf_testConfig.cmake
+[0.411s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/cmake/urdf_testConfig-version.cmake
+[0.411s] -- Up-to-date: /home/looubuntu/ros2_ws/install/urdf_test/share/urdf_test/package.xml
+[0.416s] Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': /usr/bin/cmake --install /home/looubuntu/ros2_ws/build/urdf_test

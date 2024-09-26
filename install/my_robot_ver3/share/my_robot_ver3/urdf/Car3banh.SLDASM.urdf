@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="my_robot_ver3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0168237810190544 7.13458084972141E-09 -0.00760225410164192"
+        rpy="0 0 0" />
+      <mass
+        value="0.0953373583617677" />
+      <inertia
+        ixx="5.94842863178214E-05"
+        ixy="1.95289627130984E-11"
+        ixz="-8.9958564906486E-07"
+        iyy="9.86494627792786E-05"
+        iyz="-1.60193586284062E-12"
+        izz="0.000154178001735707" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="leftwheel">
+    <inertial>
+      <origin
+        xyz="6.9389E-17 0 0.0064675"
+        rpy="0 0 0" />
+      <mass
+        value="0.014896" />
+      <inertia
+        ixx="3.4328E-06"
+        ixy="-1.3702E-22"
+        ixz="2.8683E-21"
+        iyy="3.4328E-06"
+        iyz="-7.4454E-22"
+        izz="6.1544E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/leftwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/leftwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.018999 0.0808 -0.0141"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="leftwheel" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="rightwheel">
+    <inertial>
+      <origin
+        xyz="0 -5.5511E-17 -0.0064675"
+        rpy="0 0 0" />
+      <mass
+        value="0.014896" />
+      <inertia
+        ixx="3.4328E-06"
+        ixy="2.8475E-22"
+        ixz="4.5719E-22"
+        iyy="3.4328E-06"
+        iyz="3.0947E-21"
+        izz="6.1544E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/rightwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/rightwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.018999 -0.0808 -0.0141"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rightwheel" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="conquay">
+    <inertial>
+      <origin
+        xyz="-0.0028851 0.00054871 -0.010118"
+        rpy="0 0 0" />
+      <mass
+        value="0.00084993" />
+      <inertia
+        ixx="6.8227E-08"
+        ixy="-4.9992E-10"
+        ixz="-1.6544E-08"
+        iyy="6.5695E-08"
+        iyz="3.1461E-09"
+        izz="3.908E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/conquay.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/conquay.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con_quay"
+    type="continuous">
+    <origin
+      xyz="0.058851 0 -0.003"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="conquay" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="wheelmini">
+    <inertial>
+      <origin
+        xyz="-0.00037366 1.3878E-17 0.0019648"
+        rpy="0 0 0" />
+      <mass
+        value="0.0031218" />
+      <inertia
+        ixx="1.7079E-07"
+        ixy="3.8469E-22"
+        ixz="-2.3606E-08"
+        iyy="1.663E-07"
+        iyz="2.1953E-22"
+        izz="2.9043E-07" />
+    </inertial>
+    <visual>https://chatgpt.com/c/66ddbdff-d478-800b-9aae-3df0f9d6bf61
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/wheelmini.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_ver3/meshes/wheelmini.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_mini"
+    type="continuous">
+    <origin
+      xyz="-0.00748548418996223 0.00345941128543842 -0.0236000000000019"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="conquay" />
+    <child
+      link="wheelmini" />
+    <axis
+      xyz="0.186828263287934 0 -0.982392589567335" />
+  </joint>
+  <gazebo>
+    <plugin name="two_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
+ 
+      <update_rate>100</update_rate>
+      
+      <!-- wheels -->
+      <left_joint>left_wheel</left_joint>
+      <right_joint>right_wheel</right_joint>
+ 
+      <!-- kinematics -->
+      <wheel_separation>0.15</wheel_separation>
+      <wheel_diameter>0.06</wheel_diameter>
+ 
+      <!-- limits -->
+      <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>20.0</max_wheel_acceleration>
+ 
+      <!-- Receive velocity commands on this ROS topic -->
+      <command_topic>cmd_vel</command_topic>
+ 
+      <!-- output -->
+      <!-- When false, publish no wheel odometry data to a ROS topic -->
+      <publish_odom>true</publish_odom>
+ 
+      <!-- When true, publish coordinate transform from odom to base_footprint -->
+      <!-- I usually use the robot_localization package to publish this transform -->  
+      <publish_odom_tf>true</publish_odom_tf>
+     
+      <!-- When true, publish coordinate transform from base_link to the wheels -->
+      <!-- The robot_state_publisher package is often used to publish this transform -->  
+      <publish_wheel_tf>true</publish_wheel_tf>
+ 
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom_link</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+ 
+      <odometry_source>1</odometry_source>
+      <ros>
+        <remapping>odom:=wheel/odometry</remapping>
+      </ros>
+      </plugin>
+    </gazebo>
+
+  <gazebo>
+      <plugin name="gazebo_ros_joint_state_publisher"
+          filename="libgazebo_ros_joint_state_publisher.so">
+          <update_rate>100</update_rate>
+          <joint_name>left_wheel</joint_name>
+          <joint_name>right_wheel</joint_name>
+      </plugin>
+  </gazebo>
+</robot>

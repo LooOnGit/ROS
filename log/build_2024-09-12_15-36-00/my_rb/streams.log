@@ -1,0 +1,45 @@
+[1.100s] Invoking command in '/home/looubuntu/ros2_ws/src/my_rb': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_rb/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_rb build --build-base /home/looubuntu/ros2_ws/build/my_rb/build install --record /home/looubuntu/ros2_ws/build/my_rb/install.log --single-version-externally-managed install_data
+[1.321s] running egg_info
+[1.322s] creating ../../build/my_rb/my_rb.egg-info
+[1.322s] writing ../../build/my_rb/my_rb.egg-info/PKG-INFO
+[1.322s] writing dependency_links to ../../build/my_rb/my_rb.egg-info/dependency_links.txt
+[1.322s] writing entry points to ../../build/my_rb/my_rb.egg-info/entry_points.txt
+[1.323s] writing requirements to ../../build/my_rb/my_rb.egg-info/requires.txt
+[1.323s] writing top-level names to ../../build/my_rb/my_rb.egg-info/top_level.txt
+[1.323s] writing manifest file '../../build/my_rb/my_rb.egg-info/SOURCES.txt'
+[1.324s] reading manifest file '../../build/my_rb/my_rb.egg-info/SOURCES.txt'
+[1.325s] adding license file 'LICENSE'
+[1.325s] writing manifest file '../../build/my_rb/my_rb.egg-info/SOURCES.txt'
+[1.325s] running build
+[1.325s] running build_py
+[1.325s] creating /home/looubuntu/ros2_ws/build/my_rb/build
+[1.325s] creating /home/looubuntu/ros2_ws/build/my_rb/build/lib
+[1.326s] creating /home/looubuntu/ros2_ws/build/my_rb/build/lib/my_rb
+[1.326s] copying my_rb/__init__.py -> /home/looubuntu/ros2_ws/build/my_rb/build/lib/my_rb
+[1.326s] running install
+[1.326s] running install_lib
+[1.327s] creating /home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages/my_rb
+[1.327s] copying /home/looubuntu/ros2_ws/build/my_rb/build/lib/my_rb/__init__.py -> /home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages/my_rb
+[1.327s] byte-compiling /home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages/my_rb/__init__.py to __init__.cpython-310.pyc
+[1.327s] running install_data
+[1.327s] creating /home/looubuntu/ros2_ws/install/my_rb/share/ament_index
+[1.328s] creating /home/looubuntu/ros2_ws/install/my_rb/share/ament_index/resource_index
+[1.328s] creating /home/looubuntu/ros2_ws/install/my_rb/share/ament_index/resource_index/packages
+[1.328s] copying resource/my_rb -> /home/looubuntu/ros2_ws/install/my_rb/share/ament_index/resource_index/packages
+[1.328s] copying package.xml -> /home/looubuntu/ros2_ws/install/my_rb/share/my_rb
+[1.328s] creating /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/urdf
+[1.328s] copying urdf/Skid_Steering_Drive.SLDASM.urdf -> /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/urdf
+[1.329s] copying urdf/Skid_Steering_Drive.SLDASM.csv -> /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/urdf
+[1.329s] creating /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/launch
+[1.329s] copying launch/display.launch.py -> /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/launch
+[1.329s] creating /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/meshes
+[1.329s] copying meshes/threewheel.STL -> /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/meshes
+[1.329s] copying meshes/base_link.STL -> /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/meshes
+[1.329s] copying meshes/fourwheel.STL -> /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/meshes
+[1.330s] copying meshes/onewheel.STL -> /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/meshes
+[1.331s] copying meshes/twowheel.STL -> /home/looubuntu/ros2_ws/install/my_rb/share/my_rb/meshes
+[1.331s] running install_egg_info
+[1.333s] Copying ../../build/my_rb/my_rb.egg-info to /home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages/my_rb-0.0.0-py3.10.egg-info
+[1.334s] running install_scripts
+[1.355s] writing list of installed files to '/home/looubuntu/ros2_ws/build/my_rb/install.log'
+[1.375s] Invoked command in '/home/looubuntu/ros2_ws/src/my_rb' returned '0': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_rb/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_rb build --build-base /home/looubuntu/ros2_ws/build/my_rb/build install --record /home/looubuntu/ros2_ws/build/my_rb/install.log --single-version-externally-managed install_data

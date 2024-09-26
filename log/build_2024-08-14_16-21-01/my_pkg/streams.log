@@ -1,0 +1,27 @@
+[0.471s] Invoking command in '/home/looubuntu/ros2_ws/src/my_pkg': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_pkg build --build-base /home/looubuntu/ros2_ws/build/my_pkg/build install --record /home/looubuntu/ros2_ws/build/my_pkg/install.log --single-version-externally-managed install_data
+[0.662s] running egg_info
+[0.663s] writing ../../build/my_pkg/my_pkg.egg-info/PKG-INFO
+[0.663s] writing dependency_links to ../../build/my_pkg/my_pkg.egg-info/dependency_links.txt
+[0.663s] writing entry points to ../../build/my_pkg/my_pkg.egg-info/entry_points.txt
+[0.663s] writing requirements to ../../build/my_pkg/my_pkg.egg-info/requires.txt
+[0.663s] writing top-level names to ../../build/my_pkg/my_pkg.egg-info/top_level.txt
+[0.665s] reading manifest file '../../build/my_pkg/my_pkg.egg-info/SOURCES.txt'
+[0.665s] adding license file 'LICENSE'
+[0.665s] writing manifest file '../../build/my_pkg/my_pkg.egg-info/SOURCES.txt'
+[0.666s] running build
+[0.666s] running build_py
+[0.666s] copying my_pkg/nhan.py -> /home/looubuntu/ros2_ws/build/my_pkg/build/lib/my_pkg
+[0.666s] running install
+[0.666s] running install_lib
+[0.667s] copying /home/looubuntu/ros2_ws/build/my_pkg/build/lib/my_pkg/nhan.py -> /home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages/my_pkg
+[0.667s] byte-compiling /home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages/my_pkg/nhan.py to nhan.cpython-310.pyc
+[0.668s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (nhan.py, line 22)
+[0.668s] running install_data
+[0.668s] running install_egg_info
+[0.669s] removing '/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages/my_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.669s] Copying ../../build/my_pkg/my_pkg.egg-info to /home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages/my_pkg-0.0.0-py3.10.egg-info
+[0.669s] running install_scripts
+[0.685s] Installing listener script to /home/looubuntu/ros2_ws/install/my_pkg/lib/my_pkg
+[0.685s] Installing talker script to /home/looubuntu/ros2_ws/install/my_pkg/lib/my_pkg
+[0.686s] writing list of installed files to '/home/looubuntu/ros2_ws/build/my_pkg/install.log'
+[0.702s] Invoked command in '/home/looubuntu/ros2_ws/src/my_pkg' returned '0': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_pkg build --build-base /home/looubuntu/ros2_ws/build/my_pkg/build install --record /home/looubuntu/ros2_ws/build/my_pkg/install.log --single-version-externally-managed install_data

@@ -1,0 +1,176 @@
+<!-- ロボットの名前 -->
+<robot name="diff_drive_robot">
+  <!-- ロボットの基準とするベースリンク -->
+  <link name="base_link"/>
+
+  <!-- ボディの作成 -->
+  <link name="body">
+    <visual>
+      <geometry>
+        <cylinder radius="0.2" length="0.15"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.0"/>
+      <geometry>
+        <cylinder radius="0.2" length="0.15"/>]
+      </geometry>
+    </collision>
+    <!--慣性-->
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.011875000000000002" iyy="0.011875000000000002" izz="0.020000000000000004" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- タイヤの作成 -->
+  <link name="wheel_left">
+    <visual>
+      <geometry>
+        <cylinder radius="0.15" length="0.05"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="blue">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0.05"/>]
+      </geometry>
+    </collision>
+    <!--慣性-->
+    <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="0.002916666666666667" iyy="0.002916666666666667" izz="0.005625" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+
+  <!-- タイヤの作成 -->
+  <link name="wheel_right">
+    <visual>
+      <geometry>
+        <cylinder radius="0.15" length="0.05"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="cyan">
+        <color rgba="0.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0.05"/>
+      </geometry>
+    </collision>
+    <!--慣性-->
+    <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="0.002916666666666667" iyy="0.002916666666666667" izz="0.005625" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+
+  <!-- キャスターの作成 -->
+  <link name="caster_forward">
+    <visual>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green">
+        <color rgba="0.0 1.0 0.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.0"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </collision>
+    <!--慣性-->
+    <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="3.000e-4" iyy="3.000e-4" izz="3.000e-4" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  
+  <!-- キャスターの作成 -->
+  <link name="caster_backward">
+    <visual>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="black">
+        <color rgba="0.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.0"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </collision>
+    <!--慣性-->
+    <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="3.000e-4" iyy="3.000e-4" izz="3.000e-4" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- Lidar台の作成 -->
+  <link name="lidar_base">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="yellow">
+        <color rgba="1.0 1.0 0.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.0"/>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+    <!--慣性-->
+    <inertial>
+        <mass value="0.15"/>
+        <inertia ixx="0.25" iyy="0.25" izz="0.25" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- Lidarの作成 -->
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.05"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="purple">
+        <color rgba="1.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.0"/>
+      <geometry>
+        <cylinder radius="0.05" length="0.05"/>
+      </geometry>
+    </collision>
+    <!--慣性-->
+    <inertial>
+        <mass value="0.15"/>
+        <inertia ixx="0.125" iyy="0.125" izz="0.188" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+</robot>

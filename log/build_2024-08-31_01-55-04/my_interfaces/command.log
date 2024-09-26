@@ -1,0 +1,2 @@
+Invoking command in '/home/looubuntu/ros2_ws/build/my_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_pkg:/opt/ros/humble /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/my_interfaces -- -j12 -l12
+Invoked command in '/home/looubuntu/ros2_ws/build/my_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/looubuntu/ros2_ws/install/my_pkg:/opt/ros/humble /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/my_interfaces -- -j12 -l12

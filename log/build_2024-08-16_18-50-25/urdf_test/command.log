@@ -1,0 +1,6 @@
+Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': /usr/bin/cmake /home/looubuntu/ros2_ws/src/urdf_test -DCMAKE_INSTALL_PREFIX=/home/looubuntu/ros2_ws/install/urdf_test
+Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': /usr/bin/cmake /home/looubuntu/ros2_ws/src/urdf_test -DCMAKE_INSTALL_PREFIX=/home/looubuntu/ros2_ws/install/urdf_test
+Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/urdf_test -- -j12 -l12
+Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': /usr/bin/cmake --build /home/looubuntu/ros2_ws/build/urdf_test -- -j12 -l12
+Invoking command in '/home/looubuntu/ros2_ws/build/urdf_test': /usr/bin/cmake --install /home/looubuntu/ros2_ws/build/urdf_test
+Invoked command in '/home/looubuntu/ros2_ws/build/urdf_test' returned '0': /usr/bin/cmake --install /home/looubuntu/ros2_ws/build/urdf_test

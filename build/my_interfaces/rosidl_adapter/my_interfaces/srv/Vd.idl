@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_interfaces/srv/Vd.srv
+// generated code does not contain a copyright notice
+
+
+module my_interfaces {
+  module srv {
+    struct Vd_Request {
+      float x;
+
+      float y;
+
+      float theta;
+    };
+    struct Vd_Response {
+      float sum;
+    };
+  };
+};

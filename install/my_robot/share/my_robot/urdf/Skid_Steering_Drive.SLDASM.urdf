@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="my_robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.98493976501235E-05 5.55111512312578E-17 -0.0175252786860416"
+        rpy="0 0 0" />
+      <mass
+        value="0.541764702915938" />
+      <inertia
+        ixx="0.00048985027493215"
+        ixy="-1.88596253790601E-19"
+        ixz="2.56687973703349E-10"
+        iyy="0.000710186871025426"
+        iyz="-2.11747209455392E-12"
+        izz="0.0010977506590429" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="onewheel">
+    <inertial>
+      <origin
+        xyz="4.8699E-07 -4.1096E-05 -0.0065"
+        rpy="0 0 0" />
+      <mass
+        value="0.041916" />
+      <inertia
+        ixx="5.3458E-06"
+        ixy="1.7674E-11"
+        ixz="-3.7896E-10"
+        iyy="5.3457E-06"
+        iyz="-1.4977E-10"
+        izz="1.0241E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/onewheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/onewheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="one_wheel"
+    type="continuous">
+    <origin
+      xyz="0.055 -0.08 -0.0175"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="onewheel" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="twowheel">
+    <inertial>
+      <origin
+        xyz="-1.1222E-05 3.9616E-05 -0.0065"
+        rpy="0 0 0" />
+      <mass
+        value="0.041916" />
+      <inertia
+        ixx="5.3457E-06"
+        ixy="3.5017E-11"
+        ixz="3.3351E-10"
+        iyy="5.3457E-06"
+        iyz="2.5052E-10"
+        izz="1.0241E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/twowheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/twowheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="two_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.055 -0.08 -0.0175"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="twowheel" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="threewheel">
+    <inertial>
+      <origin
+        xyz="-1.8154E-05 -3.706E-05 -0.0065"
+        rpy="0 0 0" />
+      <mass
+        value="0.041916" />
+      <inertia
+        ixx="5.3459E-06"
+        ixy="-4.5424E-11"
+        ixz="-4.0627E-10"
+        iyy="5.3458E-06"
+        iyz="4.4134E-11"
+        izz="1.0241E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/threewheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/threewheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="three_wheel"
+    type="continuous">
+    <origin
+      xyz="0.055 0.08 -0.0175"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="threewheel" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="fourwheel">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/fourwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/fourwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="four_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.055 0.08 -0.0175"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="fourwheel" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+
+  <gazebo reference="base_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+  <gazebo reference="onewheel">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+
+    <gazebo reference="twowheel">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+
+  <gazebo reference="threewheel">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+
+  <gazebo reference="fourwheel">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+      <updateRate>100.0</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <leftFrontJoint>one_wheel</leftFrontJoint>
+      <rightFrontJoint>two_wheel</rightFrontJoint>
+      <leftRearJoint>three_wheel</leftRearJoint>
+      <rightRearJoint>four_wheel</rightRearJoint>
+      <!-- kinematics -->
+      <wheel_separation>0.15</wheel_separation>
+      <wheel_diameter>0.06</wheel_diameter>
+ 
+      <!-- limits -->
+      <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>20.0</max_wheel_acceleration>
+ 
+      <!-- Receive velocity commands on this ROS topic -->
+      <command_topic>cmd_vel</command_topic>
+ 
+      <!-- output -->
+      <!-- When false, publish no wheel odometry data to a ROS topic -->
+      <publish_odom>true</publish_odom>
+ 
+      <!-- When true, publish coordinate transform from odom to base_footprint -->
+      <!-- I usually use the robot_localization package to publish this transform -->  
+      <publish_odom_tf>true</publish_odom_tf>
+     
+      <!-- When true, publish coordinate transform from base_link to the wheels -->
+      <!-- The robot_state_publisher package is often used to publish this transform -->  
+      <publish_wheel_tf>true</publish_wheel_tf>
+ 
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom_link</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+ 
+      <odometry_source>1</odometry_source>
+      <ros>
+        <remapping>odom:=wheel/odometry</remapping>
+      </ros>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+      <update_rate>100</update_rate>
+      <joint_name>one_wheel</joint_name>
+      <joint_name>two_wheel</joint_name>
+      <joint_name>three_wheel</joint_name>
+      <joint_name>three_wheel</joint_name>
+    </plugin>
+  </gazebo>
+</robot>

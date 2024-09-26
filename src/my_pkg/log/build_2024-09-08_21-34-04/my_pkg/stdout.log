@@ -1,0 +1,68 @@
+running egg_info
+creating build/my_pkg/my_pkg.egg-info
+writing build/my_pkg/my_pkg.egg-info/PKG-INFO
+writing dependency_links to build/my_pkg/my_pkg.egg-info/dependency_links.txt
+writing entry points to build/my_pkg/my_pkg.egg-info/entry_points.txt
+writing requirements to build/my_pkg/my_pkg.egg-info/requires.txt
+writing top-level names to build/my_pkg/my_pkg.egg-info/top_level.txt
+writing manifest file 'build/my_pkg/my_pkg.egg-info/SOURCES.txt'
+reading manifest file 'build/my_pkg/my_pkg.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/my_pkg/my_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build
+creating /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib
+creating /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/gui_int32.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/__init__.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/service_member_function.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/service.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/nhan.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/crtl.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/phe.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/a_to_b.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/client_member_function.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/gui.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/create_turtle.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+copying my_pkg/a_to_b_ver2.py -> /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg
+running install
+running install_lib
+creating /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/gui_int32.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/__init__.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/service_member_function.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/service.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/nhan.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/crtl.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/phe.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/a_to_b.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/client_member_function.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/gui.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/create_turtle.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+copying /home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/build/lib/my_pkg/a_to_b_ver2.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/gui_int32.py to gui_int32.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/service_member_function.py to service_member_function.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/service.py to service.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/nhan.py to nhan.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/crtl.py to crtl.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/phe.py to phe.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/a_to_b.py to a_to_b.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/client_member_function.py to client_member_function.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/gui.py to gui.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/create_turtle.py to create_turtle.cpython-310.pyc
+byte-compiling /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg/a_to_b_ver2.py to a_to_b_ver2.cpython-310.pyc
+running install_data
+creating /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/share/ament_index
+creating /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/share/ament_index/resource_index
+creating /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/share/ament_index/resource_index/packages
+copying resource/my_pkg -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/share/my_pkg
+creating /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/share/my_pkg/launch
+copying launch/display.launch.py -> /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/share/my_pkg/launch
+running install_egg_info
+Copying build/my_pkg/my_pkg.egg-info to /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/python3.10/site-packages/my_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing control script to /home/looubuntu/ros2_ws/src/my_pkg/install/my_pkg/lib/my_pkg
+writing list of installed files to '/home/looubuntu/ros2_ws/src/my_pkg/build/my_pkg/install.log'

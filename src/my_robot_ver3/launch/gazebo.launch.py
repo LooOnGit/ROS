@@ -9,6 +9,18 @@ from launch_ros.substitutions import FindPackageShare
 from launch.event_handlers import OnProcessExit
 
 def generate_launch_description():
+    model_arg = DeclareLaunchArgument(name='model', description='Absolute path to robot urdf file')
+    pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
+    use_sim_time = LaunchConfiguration('use_sim_time') 
+    package_name = 'my_robot_ver3'
+    pkg_share = FindPackageShare(package=package_name).find(package_name)
+    pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros') 
+
+    # Sửa đường dẫn tới room.world
+    world_file_path = '/home/looubuntu/ros2_ws/src/my_robot_ver3/world/room.world' # Đường dẫn đầy đủ
+    world = LaunchConfiguration('world')
+    world_path = world_file_path  # Sử dụng đường dẫn trực tiếp
+
     # Declare launch arguments
     declare_use_sim_time_cmd = DeclareLaunchArgument(
         name='use_sim_time',
@@ -53,6 +65,12 @@ def generate_launch_description():
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}],
     )
 
+    declare_world_cmd = DeclareLaunchArgument(
+        name='room',
+        default_value=world_path,
+        description='Full path to the world model file to load'
+        )
+
     # Spawn robot in Gazebo
     spawn = Node(
         package='gazebo_ros',
@@ -70,7 +88,7 @@ def generate_launch_description():
 
     # Start Gazebo
     gazebo = ExecuteProcess(
-        cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so', '-s', 'libgazebo_ros_init.so'],
+        cmd=['gazebo', world_path, '--verbose', '-s', 'libgazebo_ros_factory.so', '-s', 'libgazebo_ros_init.so'],
         output='screen'
     )
 

@@ -9,6 +9,7 @@
 /home/looubuntu/ros2_ws/install/my_robot_ver3/share/ament_index/resource_index/packages/my_robot_ver3
 /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/package.xml
 /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/urdf/my_robot_ver3.urdf
+/home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/launch/my_launch.py
 /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/launch/display.launch.py
 /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/launch/gazebo.launch.py
 /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/meshes/Left_link.STL
@@ -23,4 +24,4 @@
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3-0.0.0-py3.10.egg-info/requires.txt
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3-0.0.0-py3.10.egg-info/zip-safe
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3-0.0.0-py3.10.egg-info/dependency_links.txt
-/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/my_robot_ver3/truyen
+/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/my_robot_ver3/control

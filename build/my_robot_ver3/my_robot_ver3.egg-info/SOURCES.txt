@@ -11,6 +11,7 @@ setup.py
 ../../build/my_robot_ver3/my_robot_ver3.egg-info/zip-safe
 launch/display.launch.py
 launch/gazebo.launch.py
+launch/my_launch.py
 meshes/Base_castor_link.STL
 meshes/Left_link.STL
 meshes/Mid_link.STL

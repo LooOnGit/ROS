@@ -4,6 +4,7 @@ from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist
 import numpy as np
 from my_interfaces.srv import Vd
+from nav_msgs.msg import Odometry
 
 class RobotNavigator(Node):
 
@@ -13,11 +14,11 @@ class RobotNavigator(Node):
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
 
         self.subscription = self.create_subscription(
-            Pose,
-            '/turtle1/pose',
+            Odometry,
+            '/wheel/odometry',
             self.listener_callback,
             10)
-        self.subscription
+        self.subscription  # prevent unused variable warning
 
         self.srv = self.create_service(Vd, 'roboctrl', self.add_two_ints_callback)
 
@@ -35,10 +36,13 @@ class RobotNavigator(Node):
         return response
 
     def listener_callback(self, msg):
-        self.current_x = msg.x
-        self.current_y = msg.y
-        self.current_theta = msg.theta
+        posRobot = msg.pose.pose.position
+        oriRobot = msg.pose.pose.orientation
+        self.current_x = posRobot.x
+        self.current_y = posRobot.y
+        self.current_theta = oriRobot.z
         self.runCtrl()
+        # self.get_logger().info(f"x: {x}, y: {y} z = {z}")
 
     def runCtrl(self):
         self.x_e = self.current_x - self.taget_x
@@ -50,7 +54,7 @@ class RobotNavigator(Node):
                       [0, 0, 1]])
         G = -np.array([[self.x_e], [self.y_e], [self.theta_e]])
 
-        V = 0.5 * R @ G
+        V = 1 * R @ G
 
         msg = Twist()
 

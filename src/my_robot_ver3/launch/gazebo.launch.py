@@ -78,8 +78,8 @@ def generate_launch_description():
         arguments=[
             "-topic", "/robot_description",
             "-entity", 'my_robot_ver3',
-            "-x", '0.0',
-            "-y", '0.0',
+            "-x", '3.0',
+            "-y", '2.0',
             "-z", '0.05',
             "-Y", '0.0'
         ],
@@ -94,7 +94,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         declare_use_sim_time_cmd,
-        rviz2,
+        # rviz2,
         robot_state_publisher_node,
         joint_state_publisher_node,
         spawn,

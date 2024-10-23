@@ -7,7 +7,7 @@ def generate_launch_description():
     nodes.append(        Node(
             package='my_robot_ver3',
             namespace='vd1',
-            executable='control',
+            executable='learn',
             output = 'screen',
             name='sim2'
         ))

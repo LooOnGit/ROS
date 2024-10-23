@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<robot name="my_rb">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-1.98493976501235E-05 5.55111512312578E-17 -0.0175252786860416" rpy="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0003" iyz="0" izz="0.0002" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Adjusted friction and gravity settings in Gazebo -->
+  <gazebo reference="base_link">
+    <mu1>1000</mu1>
+    <mu2>1000</mu2>
+    <gravity>1</gravity>
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+  <!-- Adjusted dynamics and friction for wheels -->
+  <gazebo reference="onewheel">
+    <mu1>1000</mu1>
+    <mu2>1000</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="twowheel">
+    <mu1>1000</mu1>
+    <mu2>1000</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="threewheel">
+    <mu1>1000</mu1>
+    <mu2>1000</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="fourwheel">
+    <mu1>1000</mu1>
+    <mu2>1000</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!-- onewheel -->
+  <link name="onewheel">
+    <inertial>
+      <origin xyz="4.8699E-07 -4.1096E-05 -0.0065" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.00002" ixy="0" ixz="0" iyy="0.00002" iyz="0" izz="0.0001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/onewheel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/onewheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="one_wheel" type="continuous">
+    <origin xyz="0.055 -0.08 -0.0175" rpy="1.5708 0 0" />
+    <parent link="base_link" />
+    <child link="onewheel" />
+    <axis xyz="0 0 1" />
+    <limit effort="10" velocity="10" />
+    <dynamics damping="5.0" friction="5.0" />
+    <gazebo>
+      <joint_friction>10.0</joint_friction>
+    </gazebo>
+  </joint>
+
+  <!-- twowheel -->
+  <link name="twowheel">
+    <inertial>
+      <origin xyz="-1.1222E-05 3.9616E-05 -0.0065" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.00002" ixy="0" ixz="0" iyy="0.00002" iyz="0" izz="0.0001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/twowheel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/twowheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="two_wheel" type="continuous">
+    <origin xyz="-0.055 -0.08 -0.0175" rpy="1.5708 0 0" />
+    <parent link="base_link" />
+    <child link="twowheel" />
+    <axis xyz="0 0 1" />
+    <limit effort="10" velocity="10" />
+    <dynamics damping="5.0" friction="5.0" />
+    <gazebo>
+      <joint_friction>10.0</joint_friction>
+    </gazebo>
+  </joint>
+
+  <!-- threewheel -->
+  <link name="threewheel">
+    <inertial>
+      <origin xyz="-1.8154E-05 -3.706E-05 -0.0065" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.00002" ixy="0" ixz="0" iyy="0.00002" iyz="0" izz="0.0001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/threewheel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/threewheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="three_wheel" type="continuous">
+    <origin xyz="0.055 0.08 -0.0175" rpy="1.5708 0 3.1416" />
+    <parent link="base_link" />
+    <child link="threewheel" />
+    <axis xyz="0 0 1" />
+    <limit effort="10" velocity="10" />
+    <dynamics damping="5.0" friction="5.0" />
+    <gazebo>
+      <joint_friction>10.0</joint_friction>
+    </gazebo>
+  </joint>
+
+  <!-- fourwheel -->
+  <link name="fourwheel">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.00002" ixy="0" ixz="0" iyy="0.00002" iyz="0" izz="0.0001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/fourwheel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://my_rb/meshes/fourwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="four_wheel" type="continuous">
+    <origin xyz="-0.055 0.08 -0.0175" rpy="1.5708 0 3.1416" />
+    <parent link="base_link" />
+    <child link="fourwheel" />
+    <axis xyz="0 0 1" />
+    <limit effort="10" velocity="10" />
+    <dynamics damping="5.0" friction="5.0" />
+    <gazebo>
+      <joint_friction>10.0</joint_friction>
+    </gazebo>
+  </joint>
+  <gazebo>
+    <plugin name="four_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
+ 
+      <update_rate>100</update_rate>
+      <num_wheel_pairs>2</num_wheel_pairs>
+      <!-- wheels -->
+      <left_joint>three_wheel</left_joint>
+      <right_joint>one_wheel</right_joint>
+      
+      <left_joint>four_wheel</left_joint>
+      <right_joint>two_wheel</right_joint>
+
+      <!-- kinematics -->
+      <wheel_separation>0.135</wheel_separation> <!-- Khoảng cách giữa các bánh trước và sau -->
+      <wheel_diameter>0.073</wheel_diameter> <!-- Đường kính bánh xe -->
+ 
+      <!-- limits -->
+      <max_wheel_torque>30</max_wheel_torque>
+      <max_wheel_acceleration>30.0</max_wheel_acceleration>
+ 
+      <!-- Receive velocity commands on this ROS topic -->
+      <command_topic>cmd_vel</command_topic>
+ 
+      <!-- output -->
+      <!-- When false, publish no wheel odometry data to a ROS topic -->
+      <publish_odom>true</publish_odom>
+ 
+      <!-- When true, publish coordinate transform from odom to base_footprint -->
+      <publish_odom_tf>true</publish_odom_tf>
+     
+      <!-- When true, publish coordinate transform from base_link to the wheels -->
+      <publish_wheel_tf>true</publish_wheel_tf>
+ 
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom_link</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+ 
+      <odometry_source>1</odometry_source>
+      <ros>
+        <remapping>odom:=wheel/odometry</remapping>
+      </ros>
+    </plugin>
+</gazebo>
+
+<gazebo>
+    <plugin name="gazebo_ros_joint_state_publisher"
+        filename="libgazebo_ros_joint_state_publisher.so">
+        <update_rate>100</update_rate>
+        <joint_name>one_wheel</joint_name>
+        <joint_name>two_wheel</joint_name>
+        <joint_name>three_wheel</joint_name>
+        <joint_name>four_wheel</joint_name>
+    </plugin>
+</gazebo>
+</robot>

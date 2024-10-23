@@ -27,7 +27,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'control = my_robot_ver3.a_to_b_ver2:main',
+            'learn = my_robot_ver3.robot_ai:main',
+            # 'control = my_robot_ver3.a_to_b_ver2:main',
             # 'truyen = my_robot_ver3.gui:main',
             # 'nhan = my_robot_ver3.nhan:main',
         ],

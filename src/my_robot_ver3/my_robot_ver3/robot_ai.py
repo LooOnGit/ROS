@@ -52,6 +52,7 @@ class RobotNavigator(Node):
         self.popSize = 10
         self.index = 0
         self.fitnessArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        self.fitnessArr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         self.fitness = 0
 
         self.input_size = 10
@@ -111,16 +112,19 @@ class RobotNavigator(Node):
                 # self.get_logger().info(f"{self.timePreSys - self.timePastSys}")
                 time.sleep(0.5)
                 if((self.timePreSys - self.timePastSys) > 0.6):
-                    self.fitnessArr[self.index] = self.bestFitness    
+                    self.fitnessArr[self.index] = self.bestFitness
+                    self.fitnessArr2[self.index] = self.bestFitness    
                     self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")   
                     self.index += 1
                     
                 if self.index == 10:
                     self.pop += 1
                     self.get_logger().info(f"Pop{self.pop}")
+                    fit1 = self.fitnessArr
+                    fit2 = self.fitnessArr2
+                    self.w1 = self.ga(self.w1, fit1, self.popSize, self.input_size, self.hidden_size)
+                    self.w2 = self.ga(self.w2, fit2, self.popSize, self.hidden_size, self.output_size)
                     self.index = 0
-                    self.w1 = self.ga(self.w1, self.fitnessArr, self.popSize, self.input_size, self.hidden_size)
-                    self.w2 = self.ga(self.w2, self.fitnessArr, self.popSize, self.hidden_size, self.output_size)
                 self.fitness = 0
                 self.start_time = time.time()
                 self.w1Pre = self.w1[self.index]
@@ -195,7 +199,8 @@ class RobotNavigator(Node):
             self.timePreSys = time.time()
             time.sleep(0.5)
             if((self.timePreSys - self.timePastSys) > 0.6):
-                self.fitnessArr[self.index] = self.bestFitness    
+                self.fitnessArr[self.index] = self.bestFitness   
+                self.fitnessArr2[self.index] = self.bestFitness    
                 self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")   
                 self.index += 1
 
@@ -203,8 +208,10 @@ class RobotNavigator(Node):
                 self.pop += 1
                 self.get_logger().info(f"Pop{self.pop}")
                 self.index = 0
-                self.w1 = self.ga(self.w1, self.fitnessArr, self.popSize, self.input_size, self.hidden_size)
-                self.w2 = self.ga(self.w2, self.fitnessArr, self.popSize, self.hidden_size, self.output_size)
+                fit1 = self.fitnessArr
+                fit2 = self.fitnessArr2
+                self.w1 = self.ga(self.w1, fit1, self.popSize, self.input_size, self.hidden_size)
+                self.w2 = self.ga(self.w2, fit2, self.popSize, self.hidden_size, self.output_size)
             self.fitness = 0
             self.start_time = time.time()
             self.w1Pre = self.w1[self.index]
@@ -278,7 +285,8 @@ class RobotNavigator(Node):
     ################################################################################### Tổng hợp
 
     def ga(self, pop, fitness, ngene, input_size, hidden_size):
-        pop_after_selection = self.selection(pop, fitness, ngene)
+        fitness1 = fitness
+        pop_after_selection = self.selection(pop, fitness1, ngene)
         pop_after_crossover = self.crossover(pop_after_selection, hidden_size, input_size, ngene)
         pop_after_mutation = self.mutation(pop_after_crossover, mutation_rate = 0.1, pop_size=hidden_size, ngene=input_size)
         return pop_after_mutation

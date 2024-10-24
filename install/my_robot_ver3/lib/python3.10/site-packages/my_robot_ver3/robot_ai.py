@@ -77,6 +77,10 @@ class RobotNavigator(Node):
         self.timePre = 0
         self.thetaTime = 0
 
+        #init time
+        self.timePreSys = 0
+        self.timePastSys = 0 
+
 
         #PARALLELOGRAM
         self.edge = 0
@@ -100,15 +104,17 @@ class RobotNavigator(Node):
         laser = np.array(msg.ranges)[:-1]
         for i, value in enumerate(laser):
             if value < 0.15:
-                # self.bestFitness = self.fitness + 999
-                self.checkError(self.taget_x - self.current_x)
+                self.checkTouch(self.taget_x - self.current_x)
                 self.send_reset()
-                self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")
+                self.timePastSys = self.timePreSys
+                self.timePreSys = time.time()
+                # self.get_logger().info(f"{self.timePreSys - self.timePastSys}")
                 time.sleep(0.5)
-                if(self.bestFitness > 1016 and self.bestFitness < 1020):    
-                    self.fitnessArr[self.index] = self.bestFitness
+                if((self.timePreSys - self.timePastSys) > 0.6):
+                    self.fitnessArr[self.index] = self.bestFitness    
+                    self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")   
                     self.index += 1
-                self.get_logger().info(f"{self.fitnessArr}")
+                    
                 if self.index == 10:
                     self.pop += 1
                     self.get_logger().info(f"Pop{self.pop}")
@@ -140,8 +146,11 @@ class RobotNavigator(Node):
         
         return output_layer_output
     
-    def checkError(self, x):
-        self.bestFitness = self.bestFitness + (x * 100)
+    def checkTouch(self, x):
+        self.bestFitness = self.fitness + (x * (x*700))
+    
+    def checkBack(self, x):
+        self.bestFitness = self.fitness + (x * (x*1500))
     
     def listener_callback(self, msg):
         #read position
@@ -167,9 +176,8 @@ class RobotNavigator(Node):
             self.b = (self.taget_x - self.current_x) ** 2 + (self.taget_y - self.current_y) ** 2
             self.fitness += (1/2)*self.h*(self.a + self.b)
             if (self.b - self.a) > 0:
-                self.bestFitness = self.fitness + 999
+                self.bestFitness = self.fitness
 
-            # self.get_logger().info(f"fitness: {self.fitness}")
             self.edge = 1
         if self.edge == 1:
             self.timeStart = time.time()
@@ -179,16 +187,18 @@ class RobotNavigator(Node):
             self.timeStart = time.time()
             self.edge += 1
             self.a = (self.taget_x - self.current_x) ** 2 + (self.taget_y - self.current_y) ** 2
-        
-        if self.current_x < (self.past_x - 0.03):
-            self.bestFitness = self.fitness + 1500
+    
+        if (self.current_x  - self.past_x) < (-0.025):
+            self.checkBack(self.taget_x - self.current_x)
             self.send_reset()
-            self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")
+            self.timePastSys = self.timePreSys
+            self.timePreSys = time.time()
             time.sleep(0.5)
-            if(self.bestFitness > 1016 and self.bestFitness < 1020):
-                self.fitnessArr[self.index] = self.bestFitness       
+            if((self.timePreSys - self.timePastSys) > 0.6):
+                self.fitnessArr[self.index] = self.bestFitness    
+                self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")   
                 self.index += 1
-            self.get_logger().info(f"{self.fitnessArr}")
+
             if self.index == 10:
                 self.pop += 1
                 self.get_logger().info(f"Pop{self.pop}")
@@ -228,7 +238,7 @@ class RobotNavigator(Node):
         for i in fitness:
             temp = i/total
             percent.append(temp)
-        random_choice = np.random.choice(range(ngene), size=ngene, p=percent, replace=True)
+        random_choice = np.random.choice(range(ngene), size=ngene, p=percent, replace=False)
         result = pop[random_choice,:,:]
         return np.array(result)
 

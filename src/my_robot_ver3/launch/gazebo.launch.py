@@ -79,7 +79,7 @@ def generate_launch_description():
             "-topic", "/robot_description",
             "-entity", 'my_robot_ver3',
             "-x", '3.0',
-            "-y", '2.0',
+            "-y", '3.0',
             "-z", '0.05',
             "-Y", '0.0'
         ],

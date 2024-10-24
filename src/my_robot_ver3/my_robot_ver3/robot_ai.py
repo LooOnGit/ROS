@@ -48,7 +48,8 @@ class RobotNavigator(Node):
         self.sensors = np.zeros(10)  # Mảng 1 chiều với 10 phần tử
 
         #Init neural
-        self.pop = 10
+        self.pop = 0
+        self.popSize = 10
         self.index = 0
         self.fitnessArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         self.fitness = 0
@@ -58,8 +59,8 @@ class RobotNavigator(Node):
         self.output_size = 2
 
 
-        self.w1 = np.random.uniform(-3,3,size=(self.pop, self.input_size, self.hidden_size))
-        self.w2 = np.random.uniform(-3,3,size=(self.pop, self.hidden_size, self.output_size))
+        self.w1 = np.random.uniform(-3,3,size=(self.popSize, self.input_size, self.hidden_size))
+        self.w2 = np.random.uniform(-3,3,size=(self.popSize, self.hidden_size, self.output_size))
         self.b2 = np.random.randn(self.output_size)
         self.b1 = np.random.randn(self.hidden_size)
 
@@ -72,8 +73,23 @@ class RobotNavigator(Node):
 
         self.bestFitness = 0
 
-        self.start_time = time.time()
+        self.timeStart = 0
+        self.timePre = 0
         self.thetaTime = 0
+
+        #init time
+        self.timePreSys = 0
+        self.timePastSys = 0 
+
+
+        #PARALLELOGRAM
+        self.edge = 0
+        self.a = 0
+        self.b = 0
+        self.h = 0
+
+        self.past = 0
+        self.pre = 0
 
     def send_reset(self):
         return self.cli.call_async(self.req)
@@ -87,25 +103,30 @@ class RobotNavigator(Node):
     def read_sensor(self, msg):
         laser = np.array(msg.ranges)[:-1]
         for i, value in enumerate(laser):
-            if value < 0.3:
-                self.bestFitness = self.bestFitness - 999
+            if value < 0.15:
+                self.checkTouch(self.taget_x - self.current_x)
                 self.send_reset()
-                time.sleep(0.1)
-                self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")
-                self.fitnessArr[self.index] = self.bestFitness
-                self.get_logger().info(f"{self.fitnessArr}")
-                self.index += 1
+                self.timePastSys = self.timePreSys
+                self.timePreSys = time.time()
+                # self.get_logger().info(f"{self.timePreSys - self.timePastSys}")
+                time.sleep(0.5)
+                if((self.timePreSys - self.timePastSys) > 0.6):
+                    self.fitnessArr[self.index] = self.bestFitness    
+                    self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")   
+                    self.index += 1
+                    
                 if self.index == 10:
+                    self.pop += 1
+                    self.get_logger().info(f"Pop{self.pop}")
                     self.index = 0
-                    self.w1 = self.ga(self.w1, self.fitnessArr, self.pop, self.input_size, self.hidden_size)
-                    self.w2 = self.ga(self.w2, self.fitnessArr, self.pop, self.hidden_size, self.output_size)
+                    self.w1 = self.ga(self.w1, self.fitnessArr, self.popSize, self.input_size, self.hidden_size)
+                    self.w2 = self.ga(self.w2, self.fitnessArr, self.popSize, self.hidden_size, self.output_size)
                 self.fitness = 0
                 self.start_time = time.time()
                 self.w1Pre = self.w1[self.index]
                 self.w2Pre = self.w2[self.index]
                 self.bestFitness = 0
         
-        # self.get_logger().info(f"{laser[0]}")
         self.sensors = laser
     
     def sigmoid(self, x):
@@ -125,6 +146,12 @@ class RobotNavigator(Node):
         
         return output_layer_output
     
+    def checkTouch(self, x):
+        self.bestFitness = self.fitness + (x * (x*700))
+    
+    def checkBack(self, x):
+        self.bestFitness = self.fitness + (x * (x*1500))
+    
     def listener_callback(self, msg):
         #read position
         self.past_x = self.current_x
@@ -133,56 +160,58 @@ class RobotNavigator(Node):
         oriRobot = msg.pose.pose.orientation
         self.current_x = posRobot.x
         self.current_y = posRobot.y
+        # self.get_logger().info(f"{self.taget_x - self.current_x}")
+
         self.current_theta = self.euler_from_quaternion(oriRobot.w, oriRobot.x, oriRobot.y, oriRobot.z)
         #Neural
         pak = self.neuron(self.sensors, self.w1Pre, self.b1, self.w2Pre, self.b2)
         x = pak[0]
         z = pak[1]
-        self.get_logger().info(f"{z}")
-        
+        # self.get_logger().info(f"{z}")
 
         #fitness
+        if self.edge == 2:
+            self.timePre = time.time()
+            self.h = (self.timePre - self.timeStart)
+            self.b = (self.taget_x - self.current_x) ** 2 + (self.taget_y - self.current_y) ** 2
+            self.fitness += (1/2)*self.h*(self.a + self.b)
+            if (self.b - self.a) > 0:
+                self.bestFitness = self.fitness
 
-
-        # Mục tiêu là khoảng cách từ vị trí hiện tại đến tọa độ mục tiêu (taget_x, taget_y)
-        distance_to_goal = math.sqrt((self.taget_x - self.current_x) ** 2 + (self.taget_y - self.current_y) ** 2)
-
-        # Kiểm tra nếu có vật cản phía trước
-        obstacle_distance = min(self.sensors)
-
-        # Trọng số cho khoảng cách tới mục tiêu, tránh vật cản, và thời gian
-        alpha = 15 # Trọng số cho mục tiêu
-        beta =  5  # Trọng số cho tránh vật cản
-        gamma = 2  # Trọng số cho thời gian, giá trị này bạn có thể điều chỉnh
-
-        self.thetaTime = time.time() - self.start_time
-        # Fitness càng cao khi khoảng cách càng nhỏ và thời gian ít hơn
-        self.fitness= (alpha / distance_to_goal) + (beta * obstacle_distance) + (gamma / self.thetaTime)
-
-        if self.fitness > self.bestFitness:
-            self.bestFitness = self.fitness
-
-        self.runCtrl(x, z)
-        # self.get_logger().info(f"fitness: {self.fitness}")
-
-        if(self.thetaTime) > 10:
-            if self.fitness < 10:
-                self.bestFitness = self.bestFitness - 9999
-                self.send_reset()
-                time.sleep(0.1)
-                self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")
-                self.fitnessArr[self.index] = self.bestFitness
-                # self.get_logger().info(f"{self.fitnessArr}")
+            self.edge = 1
+        if self.edge == 1:
+            self.timeStart = time.time()
+            self.edge += 1
+            self.a = (self.taget_x - self.current_x) ** 2 + (self.taget_y - self.current_y) ** 2
+        else:
+            self.timeStart = time.time()
+            self.edge += 1
+            self.a = (self.taget_x - self.current_x) ** 2 + (self.taget_y - self.current_y) ** 2
+    
+        if (self.current_x  - self.past_x) < (-0.025):
+            self.checkBack(self.taget_x - self.current_x)
+            self.send_reset()
+            self.timePastSys = self.timePreSys
+            self.timePreSys = time.time()
+            time.sleep(0.5)
+            if((self.timePreSys - self.timePastSys) > 0.6):
+                self.fitnessArr[self.index] = self.bestFitness    
+                self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")   
                 self.index += 1
-                if self.index == 10:
-                    self.index = 0
-                    self.w1 = self.ga(self.w1, self.fitnessArr, self.pop, self.input_size, self.hidden_size)
-                    self.w2 = self.ga(self.w2, self.fitnessArr, self.pop, self.hidden_size, self.output_size)
-                self.fitness = 0
-                self.start_time = time.time()
-                self.w1Pre = self.w1[self.index]
-                self.w2Pre = self.w2[self.index]
-                self.bestFitness = 0
+
+            if self.index == 10:
+                self.pop += 1
+                self.get_logger().info(f"Pop{self.pop}")
+                self.index = 0
+                self.w1 = self.ga(self.w1, self.fitnessArr, self.popSize, self.input_size, self.hidden_size)
+                self.w2 = self.ga(self.w2, self.fitnessArr, self.popSize, self.hidden_size, self.output_size)
+            self.fitness = 0
+            self.start_time = time.time()
+            self.w1Pre = self.w1[self.index]
+            self.w2Pre = self.w2[self.index]
+            self.bestFitness = 0
+
+        self.runCtrl(abs(x*0.8), z*0.8)
 
 
     def euler_from_quaternion(self, w, x, y, z):
@@ -204,7 +233,7 @@ class RobotNavigator(Node):
     def selection(self, pop, fitness, ngene):
         percent = []
         for i in range(len(fitness)):
-            fitness[i] = fitness[i] + 10000
+            fitness[i] = 1/fitness[i]
         total = sum(fitness)
         for i in fitness:
             temp = i/total

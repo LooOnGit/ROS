@@ -1,5 +1,6 @@
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/__init__.py
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/robot_ai.py
+/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/test_test.py
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/neuron.py
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/quaterniontoeuler.py
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/config.py
@@ -14,6 +15,7 @@
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/GA_Sample.py
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/__pycache__/__init__.cpython-310.pyc
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/__pycache__/robot_ai.cpython-310.pyc
+/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/__pycache__/test_test.cpython-310.pyc
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/__pycache__/neuron.cpython-310.pyc
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/__pycache__/quaterniontoeuler.cpython-310.pyc
 /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/__pycache__/config.cpython-310.pyc

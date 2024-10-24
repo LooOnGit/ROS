@@ -30,6 +30,7 @@ my_robot_ver3/neuron.py
 my_robot_ver3/nhan.py
 my_robot_ver3/quaterniontoeuler.py
 my_robot_ver3/robot_ai.py
+my_robot_ver3/test_test.py
 my_robot_ver3/tich_hop.py
 resource/my_robot_ver3
 test/test_copyright.py

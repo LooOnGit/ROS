@@ -1,0 +1,80 @@
+[1.269s] Invoking command in '/home/looubuntu/ros2_ws/src/my_robot_ver3': PYTHONPATH=/home/looubuntu/ros2_ws/src/build/my_robot_ver3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_ver3 build --build-base /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build install --record /home/looubuntu/ros2_ws/src/build/my_robot_ver3/install.log --single-version-externally-managed install_data
+[1.515s] running egg_info
+[1.516s] creating ../build/my_robot_ver3/my_robot_ver3.egg-info
+[1.517s] writing ../build/my_robot_ver3/my_robot_ver3.egg-info/PKG-INFO
+[1.517s] writing dependency_links to ../build/my_robot_ver3/my_robot_ver3.egg-info/dependency_links.txt
+[1.517s] writing entry points to ../build/my_robot_ver3/my_robot_ver3.egg-info/entry_points.txt
+[1.517s] writing requirements to ../build/my_robot_ver3/my_robot_ver3.egg-info/requires.txt
+[1.517s] writing top-level names to ../build/my_robot_ver3/my_robot_ver3.egg-info/top_level.txt
+[1.518s] writing manifest file '../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[1.519s] reading manifest file '../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[1.519s] adding license file 'LICENSE'
+[1.521s] writing manifest file '../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[1.521s] running build
+[1.522s] running build_py
+[1.522s] creating /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build
+[1.522s] creating /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib
+[1.522s] creating /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.522s] copying my_robot_ver3/__init__.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.523s] copying my_robot_ver3/robot_ai.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.523s] copying my_robot_ver3/neuron.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.523s] copying my_robot_ver3/quaterniontoeuler.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.523s] copying my_robot_ver3/config.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.524s] copying my_robot_ver3/nhan.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.524s] copying my_robot_ver3/GA_Code.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.524s] copying my_robot_ver3/tich_hop.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.524s] copying my_robot_ver3/gui.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.524s] copying my_robot_ver3/a_to_b_ver2.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.524s] copying my_robot_ver3/main.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.524s] copying my_robot_ver3/GA_Sample.py -> /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3
+[1.524s] running install
+[1.524s] running install_lib
+[1.525s] creating /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.525s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/__init__.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.525s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/robot_ai.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.525s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/neuron.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.525s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/quaterniontoeuler.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.525s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/config.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.525s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/nhan.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.526s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/GA_Code.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.526s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/tich_hop.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.526s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/gui.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.526s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/a_to_b_ver2.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.526s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/main.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.526s] copying /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build/lib/my_robot_ver3/GA_Sample.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[1.527s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/__init__.py to __init__.cpython-310.pyc
+[1.527s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/robot_ai.py to robot_ai.cpython-310.pyc
+[1.528s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/neuron.py to neuron.cpython-310.pyc
+[1.528s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/quaterniontoeuler.py to quaterniontoeuler.cpython-310.pyc
+[1.529s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/config.py to config.cpython-310.pyc
+[1.529s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/nhan.py to nhan.cpython-310.pyc
+[1.529s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/GA_Code.py to GA_Code.cpython-310.pyc
+[1.530s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/tich_hop.py to tich_hop.cpython-310.pyc
+[1.530s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/gui.py to gui.cpython-310.pyc
+[1.530s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/a_to_b_ver2.py to a_to_b_ver2.cpython-310.pyc
+[1.531s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/main.py to main.cpython-310.pyc
+[1.531s] byte-compiling /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/GA_Sample.py to GA_Sample.cpython-310.pyc
+[1.532s] running install_data
+[1.532s] creating /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/ament_index
+[1.532s] creating /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/ament_index/resource_index
+[1.533s] creating /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/ament_index/resource_index/packages
+[1.533s] copying resource/my_robot_ver3 -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/ament_index/resource_index/packages
+[1.533s] copying package.xml -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3
+[1.533s] creating /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/urdf
+[1.533s] copying urdf/my_robot_ver3.urdf -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/urdf
+[1.533s] creating /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/launch
+[1.533s] copying launch/my_launch.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/launch
+[1.533s] copying launch/display.launch.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/launch
+[1.533s] copying launch/gazebo.launch.py -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/launch
+[1.534s] creating /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.534s] copying meshes/Left_link.STL -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.537s] copying meshes/Mid_link.STL -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.539s] copying meshes/base_link.STL -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.544s] copying meshes/Base_castor_link.STL -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.545s] copying meshes/Right_link.STL -> /home/looubuntu/ros2_ws/src/install/my_robot_ver3/share/my_robot_ver3/meshes
+[1.549s] running install_egg_info
+[1.551s] Copying ../build/my_robot_ver3/my_robot_ver3.egg-info to /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3-0.0.0-py3.10.egg-info
+[1.552s] running install_scripts
+[1.580s] Installing learn script to /home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/my_robot_ver3
+[1.581s] writing list of installed files to '/home/looubuntu/ros2_ws/src/build/my_robot_ver3/install.log'
+[1.623s] Invoked command in '/home/looubuntu/ros2_ws/src/my_robot_ver3' returned '0': PYTHONPATH=/home/looubuntu/ros2_ws/src/build/my_robot_ver3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/src/install/my_robot_ver3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_ver3 build --build-base /home/looubuntu/ros2_ws/src/build/my_robot_ver3/build install --record /home/looubuntu/ros2_ws/src/build/my_robot_ver3/install.log --single-version-externally-managed install_data

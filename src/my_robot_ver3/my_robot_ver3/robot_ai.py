@@ -45,7 +45,7 @@ class RobotNavigator(Node):
         self.taget_x = 9.0
         self.taget_y = 2.0
         self.taget_theta = 0.0
-        self.sensors = np.zeros(10)  # Mảng 1 chiều với 10 phần tử
+        self.sensors = [1,2,3,4,5,6,7,8,9,10, 11, 12, 13, 14, 15]  # Mảng 1 chiều với 10 phần tử
 
         #Init neural
         self.pop = 0
@@ -55,13 +55,13 @@ class RobotNavigator(Node):
         self.fitnessArr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         self.fitness = 0
 
-        self.input_size = 10
+        self.input_size = 15
         self.hidden_size = 50
         self.output_size = 2
 
 
-        self.w1 = np.random.uniform(-3,3,size=(self.popSize, self.input_size, self.hidden_size))
-        self.w2 = np.random.uniform(-3,3,size=(self.popSize, self.hidden_size, self.output_size))
+        self.w1 = np.random.uniform(-1,1,size=(self.popSize, self.input_size, self.hidden_size))
+        self.w2 = np.random.uniform(-1,1,size=(self.popSize, self.hidden_size, self.output_size))
         self.b2 = np.random.randn(self.output_size)
         self.b1 = np.random.randn(self.hidden_size)
 
@@ -91,6 +91,7 @@ class RobotNavigator(Node):
 
         self.past = 0
         self.pre = 0
+        self.get_logger().info(f"Pop{0}")
 
     def send_reset(self):
         return self.cli.call_async(self.req)
@@ -122,16 +123,21 @@ class RobotNavigator(Node):
                     self.get_logger().info(f"Pop{self.pop}")
                     fit1 = self.fitnessArr
                     fit2 = self.fitnessArr2
-                    self.w1 = self.ga(self.w1, fit1, self.popSize, self.input_size, self.hidden_size)
-                    self.w2 = self.ga(self.w2, fit2, self.popSize, self.hidden_size, self.output_size)
+                    self.w1,self.w2 = self.selection(self.w1, self.w2, fit1, self.popSize)
+                    self.w1 = self.ga(self.w1, self.popSize, self.input_size, self.hidden_size)
+                    self.w2 = self.ga(self.w2, self.popSize, self.hidden_size, self.output_size)
                     self.index = 0
                 self.fitness = 0
                 self.start_time = time.time()
                 self.w1Pre = self.w1[self.index]
                 self.w2Pre = self.w2[self.index]
                 self.bestFitness = 0
+        j = 0
+        for i, value in enumerate(laser):
+            self.sensors[j] = value
+            j+=1
         
-        self.sensors = laser
+        # self.sensors = laser
     
     def sigmoid(self, x):
         return 1 / (1 + np.exp(-x))
@@ -141,11 +147,11 @@ class RobotNavigator(Node):
 
     def neuron(self, sensor_input, w1, b1, w2, b2):
         # Tính toán đầu ra lớp ẩn
-        hidden_layer_input = np.dot(sensor_input, w1) + b1
+        hidden_layer_input = np.dot(w1.T, sensor_input) + b1
         hidden_layer_output = self.sigmoid(hidden_layer_input)
         
         # Tính toán đầu ra lớp ngõ ra
-        output_layer_input = np.dot(hidden_layer_output, w2) + b2
+        output_layer_input = np.dot(w2.T,hidden_layer_output) + b2
         output_layer_output = self.tanh(output_layer_input)
         
         return output_layer_output
@@ -168,6 +174,12 @@ class RobotNavigator(Node):
 
         self.current_theta = self.euler_from_quaternion(oriRobot.w, oriRobot.x, oriRobot.y, oriRobot.z)
         #Neural
+        self.sensors[10] = self.taget_x
+        self.sensors[11] = self.taget_y
+        self.sensors[12] = self.current_theta
+        self.sensors[13] = self.current_x
+        self.sensors[14] = self.current_y
+        
         pak = self.neuron(self.sensors, self.w1Pre, self.b1, self.w2Pre, self.b2)
         x = pak[0]
         z = pak[1]
@@ -209,16 +221,16 @@ class RobotNavigator(Node):
                 self.get_logger().info(f"Pop{self.pop}")
                 self.index = 0
                 fit1 = self.fitnessArr
-                fit2 = self.fitnessArr2
-                self.w1 = self.ga(self.w1, fit1, self.popSize, self.input_size, self.hidden_size)
-                self.w2 = self.ga(self.w2, fit2, self.popSize, self.hidden_size, self.output_size)
+                self.w1,self.w2 = self.selection(self.w1, self.w2, fit1, self.popSize)
+                self.w1 = self.ga(self.w1, self.popSize, self.input_size, self.hidden_size)
+                self.w2 = self.ga(self.w2, self.popSize, self.hidden_size, self.output_size)
             self.fitness = 0
             self.start_time = time.time()
             self.w1Pre = self.w1[self.index]
             self.w2Pre = self.w2[self.index]
             self.bestFitness = 0
 
-        self.runCtrl(abs(x*0.8), z*0.8)
+        self.runCtrl(abs(x), z)
 
 
     def euler_from_quaternion(self, w, x, y, z):
@@ -237,7 +249,7 @@ class RobotNavigator(Node):
 
         self.publisher_.publish(msg)
 
-    def selection(self, pop, fitness, ngene):
+    def selection(self, w1, w2, fitness, ngene):
         percent = []
         for i in range(len(fitness)):
             fitness[i] = 1/fitness[i]
@@ -245,9 +257,10 @@ class RobotNavigator(Node):
         for i in fitness:
             temp = i/total
             percent.append(temp)
-        random_choice = np.random.choice(range(ngene), size=ngene, p=percent, replace=False)
-        result = pop[random_choice,:,:]
-        return np.array(result)
+        random_choice = np.random.choice(range(ngene), size=ngene, p=percent, replace=True)
+        w1 = w1[random_choice,:,:]
+        w2 = w2[random_choice,:,:]
+        return w1, w2
 
     ################################################################################### Code lai ghép của nhóm
 
@@ -262,7 +275,7 @@ class RobotNavigator(Node):
                 f1 = []
                 f2 = []
                 for _ in range(input_size):
-                    crossing_point = np.random.randint(1, pop_size-1)
+                    crossing_point = int(pop_size/2)
                     f1.append(np.concatenate((p1[_][:crossing_point], p2[_][crossing_point:])))
                     f2.append(np.concatenate((p2[_][:crossing_point], p1[_][crossing_point:])))
                 f1 = np.array(f1)
@@ -278,16 +291,15 @@ class RobotNavigator(Node):
         for p in pop:
             matrix = np.random.rand(ngene, pop_size)
             changes = np.where(matrix < mutation_rate)
-            p[changes] = np.random.uniform(-3,3, size=len(changes[0]))
+            p[changes] = np.random.uniform(-1,1, size=len(changes[0]))
             result.append(p)
         return np.array(result)
 
     ################################################################################### Tổng hợp
 
-    def ga(self, pop, fitness, ngene, input_size, hidden_size):
-        fitness1 = fitness
-        pop_after_selection = self.selection(pop, fitness1, ngene)
-        pop_after_crossover = self.crossover(pop_after_selection, hidden_size, input_size, ngene)
+    def ga(self, pop, ngene, input_size, hidden_size):
+
+        pop_after_crossover = self.crossover(pop, hidden_size, input_size, ngene)
         pop_after_mutation = self.mutation(pop_after_crossover, mutation_rate = 0.1, pop_size=hidden_size, ngene=input_size)
         return pop_after_mutation
 

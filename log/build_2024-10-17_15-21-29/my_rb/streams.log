@@ -1,0 +1,21 @@
+[1.705s] Invoking command in '/home/looubuntu/ros2_ws/src/my_rb': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_rb/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_rb build --build-base /home/looubuntu/ros2_ws/build/my_rb/build install --record /home/looubuntu/ros2_ws/build/my_rb/install.log --single-version-externally-managed install_data
+[1.996s] running egg_info
+[1.997s] writing ../../build/my_rb/my_rb.egg-info/PKG-INFO
+[1.997s] writing dependency_links to ../../build/my_rb/my_rb.egg-info/dependency_links.txt
+[1.997s] writing entry points to ../../build/my_rb/my_rb.egg-info/entry_points.txt
+[1.997s] writing requirements to ../../build/my_rb/my_rb.egg-info/requires.txt
+[1.997s] writing top-level names to ../../build/my_rb/my_rb.egg-info/top_level.txt
+[1.999s] reading manifest file '../../build/my_rb/my_rb.egg-info/SOURCES.txt'
+[1.999s] adding license file 'LICENSE'
+[2.000s] writing manifest file '../../build/my_rb/my_rb.egg-info/SOURCES.txt'
+[2.000s] running build
+[2.001s] running build_py
+[2.001s] running install
+[2.001s] running install_lib
+[2.002s] running install_data
+[2.002s] running install_egg_info
+[2.004s] removing '/home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages/my_rb-0.0.0-py3.10.egg-info' (and everything under it)
+[2.004s] Copying ../../build/my_rb/my_rb.egg-info to /home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages/my_rb-0.0.0-py3.10.egg-info
+[2.005s] running install_scripts
+[2.030s] writing list of installed files to '/home/looubuntu/ros2_ws/build/my_rb/install.log'
+[2.066s] Invoked command in '/home/looubuntu/ros2_ws/src/my_rb' returned '0': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_rb/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_rb/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_rb build --build-base /home/looubuntu/ros2_ws/build/my_rb/build install --record /home/looubuntu/ros2_ws/build/my_rb/install.log --single-version-externally-managed install_data

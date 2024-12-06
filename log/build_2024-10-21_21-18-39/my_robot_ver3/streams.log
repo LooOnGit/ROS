@@ -1,0 +1,32 @@
+[1.763s] Invoking command in '/home/looubuntu/ros2_ws/src/my_robot_ver3': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_robot_ver3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_ver3 build --build-base /home/looubuntu/ros2_ws/build/my_robot_ver3/build install --record /home/looubuntu/ros2_ws/build/my_robot_ver3/install.log --single-version-externally-managed install_data
+[2.013s] running egg_info
+[2.014s] writing ../../build/my_robot_ver3/my_robot_ver3.egg-info/PKG-INFO
+[2.014s] writing dependency_links to ../../build/my_robot_ver3/my_robot_ver3.egg-info/dependency_links.txt
+[2.014s] writing entry points to ../../build/my_robot_ver3/my_robot_ver3.egg-info/entry_points.txt
+[2.014s] writing requirements to ../../build/my_robot_ver3/my_robot_ver3.egg-info/requires.txt
+[2.015s] writing top-level names to ../../build/my_robot_ver3/my_robot_ver3.egg-info/top_level.txt
+[2.017s] reading manifest file '../../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[2.025s] adding license file 'LICENSE'
+[2.026s] writing manifest file '../../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[2.026s] running build
+[2.026s] running build_py
+[2.026s] copying my_robot_ver3/robot_ai.py -> /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib/my_robot_ver3
+[2.027s] copying my_robot_ver3/ga.py -> /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib/my_robot_ver3
+[2.027s] copying my_robot_ver3/neuron (1).py -> /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib/my_robot_ver3
+[2.028s] running install
+[2.028s] running install_lib
+[2.029s] copying /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib/my_robot_ver3/robot_ai.py -> /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[2.029s] copying /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib/my_robot_ver3/ga.py -> /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[2.029s] copying /home/looubuntu/ros2_ws/build/my_robot_ver3/build/lib/my_robot_ver3/neuron (1).py -> /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3
+[2.030s] byte-compiling /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/robot_ai.py to robot_ai.cpython-310.pyc
+[2.032s] byte-compiling /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/ga.py to ga.cpython-310.pyc
+[2.033s] byte-compiling /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3/neuron (1).py to neuron (1).cpython-310.pyc
+[2.033s] running install_data
+[2.033s] copying launch/gazebo.launch.py -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/launch
+[2.033s] running install_egg_info
+[2.038s] removing '/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3-0.0.0-py3.10.egg-info' (and everything under it)
+[2.038s] Copying ../../build/my_robot_ver3/my_robot_ver3.egg-info to /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3-0.0.0-py3.10.egg-info
+[2.040s] running install_scripts
+[2.063s] Installing learn script to /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/my_robot_ver3
+[2.063s] writing list of installed files to '/home/looubuntu/ros2_ws/build/my_robot_ver3/install.log'
+[2.114s] Invoked command in '/home/looubuntu/ros2_ws/src/my_robot_ver3' returned '0': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_robot_ver3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_ver3 build --build-base /home/looubuntu/ros2_ws/build/my_robot_ver3/build install --record /home/looubuntu/ros2_ws/build/my_robot_ver3/install.log --single-version-externally-managed install_data

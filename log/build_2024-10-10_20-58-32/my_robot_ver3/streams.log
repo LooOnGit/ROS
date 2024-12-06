@@ -1,0 +1,23 @@
+[1.295s] Invoking command in '/home/looubuntu/ros2_ws/src/my_robot_ver3': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_robot_ver3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_ver3 build --build-base /home/looubuntu/ros2_ws/build/my_robot_ver3/build install --record /home/looubuntu/ros2_ws/build/my_robot_ver3/install.log --single-version-externally-managed install_data
+[1.539s] running egg_info
+[1.540s] writing ../../build/my_robot_ver3/my_robot_ver3.egg-info/PKG-INFO
+[1.540s] writing dependency_links to ../../build/my_robot_ver3/my_robot_ver3.egg-info/dependency_links.txt
+[1.540s] writing entry points to ../../build/my_robot_ver3/my_robot_ver3.egg-info/entry_points.txt
+[1.541s] writing requirements to ../../build/my_robot_ver3/my_robot_ver3.egg-info/requires.txt
+[1.541s] writing top-level names to ../../build/my_robot_ver3/my_robot_ver3.egg-info/top_level.txt
+[1.542s] reading manifest file '../../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[1.542s] adding license file 'LICENSE'
+[1.543s] writing manifest file '../../build/my_robot_ver3/my_robot_ver3.egg-info/SOURCES.txt'
+[1.543s] running build
+[1.543s] running build_py
+[1.544s] running install
+[1.544s] running install_lib
+[1.546s] running install_data
+[1.546s] copying launch/my_launch.py -> /home/looubuntu/ros2_ws/install/my_robot_ver3/share/my_robot_ver3/launch
+[1.546s] running install_egg_info
+[1.548s] removing '/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3-0.0.0-py3.10.egg-info' (and everything under it)
+[1.548s] Copying ../../build/my_robot_ver3/my_robot_ver3.egg-info to /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages/my_robot_ver3-0.0.0-py3.10.egg-info
+[1.549s] running install_scripts
+[1.570s] Installing control script to /home/looubuntu/ros2_ws/install/my_robot_ver3/lib/my_robot_ver3
+[1.570s] writing list of installed files to '/home/looubuntu/ros2_ws/build/my_robot_ver3/install.log'
+[1.608s] Invoked command in '/home/looubuntu/ros2_ws/src/my_robot_ver3' returned '0': PYTHONPATH=/home/looubuntu/ros2_ws/build/my_robot_ver3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/looubuntu/ros2_ws/install/my_robot_ver3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_ver3 build --build-base /home/looubuntu/ros2_ws/build/my_robot_ver3/build install --record /home/looubuntu/ros2_ws/build/my_robot_ver3/install.log --single-version-externally-managed install_data

@@ -121,29 +121,6 @@ class RobotNavigator(Node):
                     self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")   
                     self.index += 1
 
-                #Pop
-                if self.index == 10:
-                    self.get_logger().info(f"Total: {sum(self.fitnessArr2)}")
-                    self.pop += 1
-                    self.get_logger().info(f"Pop{self.pop}")
-                    fit1 = self.fitnessArr
-                    self.save_matrices_to_excel(self.w1,self.w2,self.fitnessArr)
-                    self.w1,self.w2 = self.selection(self.w1, self.w2, fit1, self.popSize)
-                    self.w1 = self.ga(self.w1, self.popSize, self.input_size, self.hidden_size)
-                    self.w2 = self.ga(self.w2, self.popSize, self.hidden_size, self.output_size)
-                    self.index = 0
-                self.fitness = 0
-                self.start_time = time.time()
-                self.w1Pre = self.w1[self.index]
-                self.w2Pre = self.w2[self.index]
-                self.bestFitness = 0
-        j = 0
-        for i, value in enumerate(laser):
-            self.sensors[j] = value
-            j+=1
-        
-        # self.sensors = laser
-    
     def sigmoid(self, x):
         return 1 / (1 + np.exp(-x))
     
@@ -221,33 +198,7 @@ class RobotNavigator(Node):
                 self.get_logger().info(f"Gen{self.index}: {self.bestFitness}")   
                 self.index += 1
 
-            #Pop
-            if self.index == 10:
-                self.get_logger().info(f"Total: {sum(self.fitnessArr2)}")
-                self.pop += 1
-                self.get_logger().info(f"Pop{self.pop}")
-                self.index = 0
-                fit1 = self.fitnessArr
-                self.save_matrices_to_excel(self.w1,self.w2,self.fitnessArr)
-                self.w1,self.w2 = self.selection(self.w1, self.w2, fit1, self.popSize)
-                self.w1 = self.ga(self.w1, self.popSize, self.input_size, self.hidden_size)
-                self.w2 = self.ga(self.w2, self.popSize, self.hidden_size, self.output_size)
-            self.fitness = 0
-            self.start_time = time.time()
-            self.w1Pre = self.w1[self.index]
-            self.w2Pre = self.w2[self.index]
-            self.bestFitness = 0
-
-        #Done
-        if self.taget_x == self.current_x and self.taget_y == self.current_y:
-            self.runCtrl(abs(0), 0)
-            self.get_logger().info(f"DONE")
-            self.index = 0
-            self.fitnessArr[self.index] = 0 
-            self.save_matrices_to_excel(self.w1,self.w2,self.fitnessArr)
-            sys.exit()
-        else:
-            self.runCtrl(abs(x), z)
+        self.runCtrl(abs(x), z)
 
 
     def euler_from_quaternion(self, w, x, y, z):
@@ -266,98 +217,6 @@ class RobotNavigator(Node):
 
         self.publisher_.publish(msg)
 
-    def selection(self, w1, w2, fitness, ngene):
-        percent = []
-        for i in range(len(fitness)):
-            fitness[i] = 1/fitness[i]
-        total = sum(fitness)
-        for i in fitness:
-            temp = i/total
-            percent.append(temp)
-        random_choice = np.random.choice(range(ngene), size=ngene, p=percent, replace=True)
-        w1 = w1[random_choice,:,:]
-        w2 = w2[random_choice,:,:]
-        return w1, w2
-
-    ################################################################################### Code lai ghép của nhóm
-
-    def crossover(self, pop, pop_size, input_size, ngene):
-        result = []
-        if pop_size == 2:
-            pop_size += 1
-        for i in range(ngene):
-            if i %2 == 0:
-                p1 = pop[i]
-                p2 = pop[i+1]
-                f1 = []
-                f2 = []
-                for _ in range(input_size):
-                    crossing_point = int(pop_size/2)
-                    f1.append(np.concatenate((p1[_][:crossing_point], p2[_][crossing_point:])))
-                    f2.append(np.concatenate((p2[_][:crossing_point], p1[_][crossing_point:])))
-                f1 = np.array(f1)
-                result.append(f1)
-                f2 = np.array(f2)
-                result.append(f2)
-        return np.array(result)
-
-    ################################################################################### Code đột biến của nhóm
-
-    def mutation(self, pop, mutation_rate, pop_size, ngene):
-        result = []
-        for p in pop:
-            matrix = np.random.rand(ngene, pop_size)
-            changes = np.where(matrix < mutation_rate)
-            p[changes] = np.random.uniform(-1,1, size=len(changes[0]))
-            result.append(p)
-        return np.array(result)
-
-    ################################################################################### Tổng hợp
-
-    def ga(self, pop, ngene, input_size, hidden_size):
-
-        pop_after_crossover = self.crossover(pop, hidden_size, input_size, ngene)
-        pop_after_mutation = self.mutation(pop_after_crossover, mutation_rate = 0.1, pop_size=hidden_size, ngene=input_size)
-        return pop_after_mutation
-    
-    def save_matrices_to_excel(self, w1, w2, fitness):
-        workbook = openpyxl.Workbook()
-        sheet = workbook.active
-        sheet.title = "Train ROS2"
-        sheet.cell(row=1, column=1, value="Hiden layer")
-        sheet.cell(row=1, column=2, value="Output layer")
-        sheet.cell(row=1, column=3, value="Fitness")
-        row_index = 2
-        for i in range(len(fitness)):
-            matrix1_str = '\n'.join(['\t'.join(map(str, row)) for row in w1[i]])
-            sheet.cell(row=row_index, column=1, value=matrix1_str)
-            matrix2_str = '\n'.join(['\t'.join(map(str, row)) for row in w2[i]])
-            sheet.cell(row=row_index, column=2, value=matrix2_str)
-            sheet.cell(row=row_index, column=3, value=fitness[i])
-            row_index += 2
-        workbook.save(file_excel)
-
-    def load_from_excel(self):
-        workbook = openpyxl.load_workbook(file_excel)
-        sheet = workbook.active
-        w1 = []
-        w2 = []
-        fitness = []
-        for row in range(2, sheet.max_row + 1):
-            matrix1_str = sheet.cell(row=row, column=1).value
-            matrix2_str = sheet.cell(row=row, column=2).value
-            fitness_value = sheet.cell(row=row, column=3).value
-            if matrix1_str:
-                matrix1 = [list(map(float, line.split('\t'))) for line in matrix1_str.split('\n')]
-                w1.append(matrix1)
-            if matrix2_str:
-                matrix2 = [list(map(float, line.split('\t'))) for line in matrix2_str.split('\n')]
-                w2.append(matrix2)
-            if fitness_value is not None:
-                fitness.append(fitness_value)
-        w1 = np.array(w1)
-        w2 = np.array(w2)
-        return w1, w2
 
 def main(args=None):
     rclpy.init(args=args)
